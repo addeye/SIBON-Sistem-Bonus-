@@ -6,8 +6,6 @@
  * Time: 16:50
  */
 
-require_once("session.php");
-$user = new User();
 $admin = new Admin();
 
 ?>
@@ -15,8 +13,8 @@ $admin = new Admin();
 <html>
 <head></head>
 <body>
-<?=$user->email_user?> <a href="logout.php">Logout</a>
-<h1>Selamat Datang <?= $user->nama_user ?> </h1>
+<?=$user->email_user?> <a href="../logout.php">Logout</a>
+<h3>Selamat Datang Pegawai <?= $user->nama_user ?> </h3>
 <?php
 foreach($admin->getAll() as $val){
     echo $val['nama'];

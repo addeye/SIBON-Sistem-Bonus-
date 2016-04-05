@@ -8,7 +8,7 @@
  */
 class Admin implements BaseData
 {
-        private $conn;
+    private $conn;
 
     public function __construct()
     {

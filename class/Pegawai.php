@@ -8,7 +8,14 @@
  */
 class Pegawai implements BaseData
 {
+    private $conn;
 
+    public function __construct()
+    {
+        $database = new Koneksi();
+        $db = $database->dbKoneksi();
+        $this->conn = $db;
+    }
 
     public function getAll()
     {

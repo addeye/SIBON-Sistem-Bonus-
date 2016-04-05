@@ -8,15 +8,47 @@
  */
 class Customer implements BaseData
 {
+    private $conn;
+
+    public function __construct()
+    {
+        $database = new Koneksi();
+        $db = $database->dbKoneksi();
+        $this->conn = $db;
+    }
 
     public function getAll()
     {
-        // TODO: Implement getAll() method.
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbcustomer");
+            $stmt->execute();
+            $rowCustomer = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            return $rowCustomer;
+
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
     }
 
     public function getById($id)
     {
-        // TODO: Implement getById() method.
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbcustomer WHERE id_customer = $id");
+            $stmt->execute();
+            $rowCustomer = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            return $rowCustomer;
+
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
     }
 
     public function insert($data = array())
@@ -31,6 +63,21 @@ class Customer implements BaseData
 
     public function delete($id)
     {
-        // TODO: Implement delete() method.
+        try
+        {
+            $stmt = $this->conn->prepare("DELETE FROM tbcustomer WHERE id_customer=$id");
+            $stmt->execute();
+
+            $data = [
+                'message'=>'Data Berhasil Dihapus',
+                'status' => true
+            ];
+
+            return $data;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
     }
 }

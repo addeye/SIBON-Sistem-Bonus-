@@ -10,10 +10,6 @@ $admin = new Admin();
 
 ?>
 
-<?=$user->email_user?> <a href="../logout.php">Logout</a>
 <h3>Selamat Datang <?= $user->nama_user ?> </h3>
 <?php
-foreach($admin->getAll() as $val){
-    echo $val['nama'];
-}
 ?>

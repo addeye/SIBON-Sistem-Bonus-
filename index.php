@@ -76,7 +76,7 @@ ob_start();
 		    <div class="drop-men" >
 		        <ul class=" nav_1">
 					<li class="dropdown">
-		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret"><?=$user->nama_user?><i class="caret"></i></span><img src="images/wo.jpg"></a>
+		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret"><?=$user->email_user?> | <?=$user->nama_user?><i class="caret"></i></span><img src="images/wo.jpg"></a>
 		              <ul class="dropdown-menu " role="menu">
 		                <li><a href="logout.php"><i class="fa fa-lock"></i>Logout</a></li>
 		              </ul>

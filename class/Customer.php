@@ -38,7 +38,7 @@ class Customer implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("SELECT * FROM tbcustomer WHERE id_customer = $id");
+            $stmt = $this->conn->prepare("SELECT * FROM tbcustomer WHERE id_customer=$id");
             $stmt->execute();
             $rowCustomer = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -53,12 +53,29 @@ class Customer implements BaseData
 
     public function insert($data = array())
     {
-        // TODO: Implement insert() method.
+        $stmt = $this->conn->prepare("INSERT INTO tbcustomer (id_customer,id_pegawai,nama,no_telp,alamat,email,password,tgl_input,bulan,tahun) VALUES (NULL,:uid_pegawai,:unama,:uno_telp,:ualamat,:uemail,:upassword,:utgl_input,:ubulan,:utahun)");
+        $stmt->execute(array(
+            ':uid_pegawai'=>$data['id_pegawai'],
+            ':unama'=>$data['nama'],
+            ':uno_telp'=>$data['no_telp'],
+            ':ualamat'=>$data['alamat'],
+            ':uemail'=>$data['email'],
+            ':upassword'=>$data['password'],
+            ':utgl_input'=>$data['tgl_input'],
+            ':ubulan'=>$data['bulan'],
+            ':utahun'=>$data['tahun']
+        ));
+
+        return true;
     }
 
     public function update($data = array(), $id)
     {
-        // TODO: Implement update() method.
+        $data = $this->transformasiData($data);
+        $stmt = $this->conn->prepare("UPDATE tbcustomer SET id_pegawai=?,nama=?,no_telp=?,alamat=?,email=?,password=?,tgl_input=?,bulan=?,tahun=? WHERE id_customer=$id");
+        $stmt->execute($data);
+
+        return true;
     }
 
     public function delete($id)
@@ -79,5 +96,64 @@ class Customer implements BaseData
         {
             echo $e->getMessage();
         }
+    }
+
+    public function getAllByIdPegawai($id)
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbcustomer WHERE id_pegawai=$id");
+            $stmt->execute();
+            $rowCustomer = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            return $rowCustomer;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
+
+    public function transformasiData($data = array())
+    {
+        $result = array();
+        if($data['id_pegawai']!='')
+        {
+            $result[]=$data['id_pegawai'];
+        }
+        if($data['nama']!='')
+        {
+            $result[]=$data['nama'];
+        }
+        if($data['no_telp']!='')
+        {
+            $result[]=$data['no_telp'];
+        }
+        if($data['alamat']!='')
+        {
+            $result[]=$data['alamat'];
+        }
+        if($data['email']!='')
+        {
+            $result[]=$data['email'];
+        }
+        if($data['password']!='')
+        {
+            $result[]=$data['password'];
+        }
+        if($data['tgl_input']!='')
+        {
+            $result[]=$data['tgl_input'];
+        }
+        if($data['bulan']!='')
+        {
+            $result[]=$data['bulan'];
+        }
+        if($data['tahun']!='')
+        {
+            $result[]=$data['tahun'];
+        }
+
+        return $result;
     }
 }

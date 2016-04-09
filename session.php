@@ -6,7 +6,7 @@
  * Time: 17:02
  */
 session_start();
-
+date_default_timezone_set('Asia/Jakarta');
 spl_autoload_register(function ($class) {
     include 'class/'.$class.'.php';
 });

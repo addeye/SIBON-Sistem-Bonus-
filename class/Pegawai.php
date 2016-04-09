@@ -56,7 +56,8 @@ class Pegawai implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("INSERT INTO tbpegawai (id_pegawai,nama,tgl_lahir,no_telp,alamat,tgl_masuk) VALUES (NULL,?,?,?,?,?)");
+            $data=$this->transformasiData($data);
+            $stmt = $this->conn->prepare("INSERT INTO tbpegawai (id_pegawai,nama,tgl_lahir,no_telp,alamat,tgl_masuk,email,password) VALUES (NULL,?,?,?,?,?,?,?)");
             $stmt->execute($data);
             return true;
         }
@@ -70,7 +71,8 @@ class Pegawai implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("UPDATE tbpegawai SET nama=?,tgl_lahir=?,no_telp=?,alamat=?,tgl_masuk=? WHERE id_pegawai=?");
+            $data=$this->transformasiData($data);
+            $stmt = $this->conn->prepare("UPDATE tbpegawai SET nama=?,tgl_lahir=?,no_telp=?,alamat=?,tgl_masuk=?,email=?,password=? WHERE id_pegawai=$id");
             $stmt->execute($data);
 
             return true;
@@ -94,5 +96,40 @@ class Pegawai implements BaseData
         {
             echo $e->getMessage();
         }
+    }
+
+    public function transformasiData($data = array())
+    {
+        $result = array();
+        if($data['nama']!='')
+        {
+            $result[]=$data['nama'];
+        }
+        if($data['tgl_lahir']!='')
+        {
+            $result[]=$data['tgl_lahir'];
+        }
+        if($data['no_telp']!='')
+        {
+            $result[]=$data['no_telp'];
+        }
+        if($data['alamat']!='')
+        {
+            $result[]=$data['alamat'];
+        }
+        if($data['tgl_masuk']!='')
+        {
+            $result[]=$data['tgl_masuk'];
+        }
+        if($data['email']!='')
+        {
+            $result[]=$data['email'];
+        }
+        if($data['password']!='')
+        {
+            $result[]=$data['password'];
+        }
+
+        return $result;
     }
 }

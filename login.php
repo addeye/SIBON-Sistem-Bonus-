@@ -19,7 +19,19 @@ if($user->cekLogin())
 
 if(isset($_POST['login'])) {
     $data = $_POST;
-    $result =  $user->getlogin($data) ;
+    if($_POST['level']==1)
+    {
+        $result =  $user->getloginAdmin($data) ;
+    }
+    elseif($_POST['level']==2)
+    {
+        $result =  $user->getLoginPegawai($data) ;
+    }
+    else
+    {
+        $result = $user->getLoginCustomer($data);
+    }
+
 
     if($result)
     {
@@ -32,21 +44,12 @@ if(isset($_POST['login'])) {
 }
 ?>
 
-
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 <head>
     <title>Minimal an Admin Panel Category Flat Bootstrap Responsive Website Template | Signin :: w3layouts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
     <!-- Custom Theme files -->
@@ -57,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <div class="login">
-    <h1><a href="index.html">Minimal </a></h1>
+    <h1><a href="index.html">SISBON </a></h1>
     <div class="login-bottom">
         <h2>Login</h2>
 
@@ -73,16 +76,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <input type="password" name="password" placeholder="Password" required="">
                     <i class="fa fa-lock"></i>
                 </div>
-                <a class="news-letter " href="#">
-                    <label class="checkbox1"><input type="checkbox" name="checkbox" ><i> </i>Forget Password</label>
-                </a>
+                <div class="">
+                    <select name="level" class="form-control" required>
+                        <option value="">Pilih Sebagai</option>
+                        <?php foreach($user->getLevelUser() as $key=>$val){ ?>
+                            <option value="<?=$key?>"><?=$val?></option>
+                        <?php } ?>
+                    </select>
+                </div>
             </div>
             <div class="col-md-6 login-do">
                 <label class="hvr-shutter-in-horizontal login-sub">
                     <input type="submit" name="login" value="login">
                 </label>
-                <p>Do not have an account?</p>
-                <a href="signup.html" class="hvr-shutter-in-horizontal">Signup</a>
+                <p>Ada Masalah ?</p>
+                <a href="#" class="hvr-shutter-in-horizontal">Contact Admin</a>
             </div>
 
             <div class="clearfix"> </div>

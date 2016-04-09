@@ -6,10 +6,17 @@
  * Date: 05/04/2016
  * Time: 15:24
  */
+
+include "SisbonConstant.php";
+include "SisbonHelper.php";
+
 class User
 {
+    use SessionTrait;
     private $conn;
     private $admin;
+    private $pegawai;
+    private $customer;
     public $nama_user;
     public $email_user;
 
@@ -22,13 +29,30 @@ class User
         $admin = new Admin();
         $this->admin = $admin;
 
+        $pegawai = new Pegawai();
+        $this->pegawai = $pegawai;
+
+        $customer = new Customer();
+        $this->customer = $customer;
+
         if(isset($_SESSION['user_session']))
         {
-            $this->getIdentitas();
+            if($_SESSION['user_level']=='admin')
+            {
+                $this->getIdentitasAdmin();
+            }
+            elseif($_SESSION['user_level']=='pegawai')
+            {
+                $this->getIdentitasPegawai();
+            }
+            else
+            {
+                $this->getIdentitasCustomer();
+            }
         }
     }
 
-    public function getlogin($data=array())
+    public function getloginAdmin($data=array())
     {
         try
         {
@@ -39,6 +63,7 @@ class User
             if($stmt->rowCount() == 1)
             {
                 $_SESSION['user_session'] = $userRow['id_admin'];
+                $_SESSION['user_level'] = 'admin';
                 return true;
             }
              return false;
@@ -49,6 +74,55 @@ class User
 
         }
 
+    }
+
+    public function getLoginPegawai($data=array())
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbpegawai WHERE  email=:uemail and password=:upassword");
+            $stmt->execute(array(
+                ':uemail'=>$data['email'],
+                ':upassword'=>$data['password']
+            ));
+            $pegawaiRow = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            if($stmt->rowCount() ===1)
+            {
+                $_SESSION['user_session'] = $pegawaiRow['id_pegawai'];
+                $_SESSION['user_level'] = 'pegawai';
+                return true;
+            }
+            return false;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
+
+    public function getLoginCustomer($data=array())
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbcustomer WHERE email=:uemail and password=:upassword");
+            $stmt->execute(array(
+                ':uemail'=>$data['email'],
+                ':upassword'=>$data['password']
+            ));
+            $customerRow = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            if($stmt->rowCount() == 1)
+            {
+                $_SESSION['user_session'] = $customerRow['id_customer'];
+                $_SESSION['user_level'] = 'customer';
+                return true;
+            }
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
     }
 
     public function cekLogin()
@@ -71,11 +145,33 @@ class User
         return true;
     }
 
-    public function getIdentitas()
+    public function getIdentitasAdmin()
     {
         $d = $this->admin->getById($_SESSION['user_session']);
         $this->nama_user = $d['nama'];
         $this->email_user = $d['email'];
     }
 
+    public function getIdentitasPegawai()
+    {
+        $d = $this->pegawai->getById($_SESSION['user_session']);
+        $this->nama_user = $d['nama'];
+        $this->email_user = $d['email'];
+    }
+
+    public function getIdentitasCustomer()
+    {
+        $d = $this->customer->getById($_SESSION['user_session']);
+        $this->nama_user = $d['nama'];
+        $this->email_user = $d['email'];
+    }
+
+    public function getLevelUser()
+    {
+        return [
+            SISBON_LEVEL_USER_ADMIN => 'Admin',
+            SISBON_LEVEL_USER_PEGAWAI=>'Pegawai',
+            SISBON_LEVEL_USER_CUSTOMER=>'Customer'
+        ];
+    }
 }

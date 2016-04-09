@@ -36,7 +36,7 @@ $admin = new Admin();
     $('.btn-del').click(function(){
         var id = this.id;
         console.log(id);
-        var rest = confirm('Apakah Nada yakin');
+        var rest = confirm('Apakah Anda yakin');
         if(rest) {
             $.ajax({
                 method: "GET",

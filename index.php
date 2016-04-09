@@ -1,6 +1,7 @@
 <?php
 require_once("session.php");
 ob_start();
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -55,7 +56,7 @@ ob_start();
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               <h1> <a class="navbar-brand" href="index.php">SISBON</a></h1>
+               <h1> <a class="navbar-brand" href="index.php">SISBON <?=SISBON_LEVEL_USER_CUSTOMER?></a></h1>
 			   </div>
 			 <div class=" border-bottom">
         	<div class="full-left">
@@ -91,31 +92,7 @@ ob_start();
 		    <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
-				
-                    <li>
-                        <a href="index.php" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Dashboards</span> </a>
-                    </li>
-                   
-                    <li>
-                        <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-indent nav_icon"></i> <span class="nav-label">Manajemen</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="?page=admin" class=" hvr-bounce-to-right"> <i class="fa fa-area-chart nav_icon"></i>User</a></li>
-                            <li><a href="maps.html" class=" hvr-bounce-to-right"><i class="fa fa-map-marker nav_icon"></i>Setting</a></li>
-					   </ul>
-                    </li>
-					 <li>
-                        <a href="?page=pegawai" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Pegawai</span> </a>
-                    </li>
-                    <li>
-                        <a href="gallery.html" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Customer</span> </a>
-                    </li>
-                    <li>
-                        <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-list nav_icon"></i> <span class="nav-label">Data Master</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="forms.html" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Kriteria</a></li>
-                            <li><a href="validation.html" class=" hvr-bounce-to-right"><i class="fa fa-check-square-o nav_icon"></i>Data</a></li>
-                        </ul>
-                    </li>
+					<?php include "sidemenu.php" ?>
                 </ul>
             </div>
 			</div>

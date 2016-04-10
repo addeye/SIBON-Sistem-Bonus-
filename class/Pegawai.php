@@ -132,4 +132,20 @@ class Pegawai implements BaseData
 
         return $result;
     }
+
+    public function getCountCustomerByPegawai($id)
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbcustomer WHERE id_pegawai=$id");
+            $stmt->execute();
+            $count = $stmt->rowCount();
+
+            return $count;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
 }

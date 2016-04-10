@@ -55,23 +55,62 @@ class Kinerja implements BaseData
         try
         {
             $data = $this->transformasiData($data);
-            $stmt = $this->conn->prepare("INSERT INTO tbkinerja (id_pegawai,jml_absensi,kejujuran,kualitas_kerja,cuti,kedisiplinan,sikap,target,bulan,tahun) VALUES (?,?,?,?,?,?,?,?,?,?)");
+            $stmt = $this->conn->prepare("INSERT INTO tbkinerja (id_kinerja,id_pegawai,jml_absensi,kejujuran,kualitas_kerja,cuti,kedisiplinan,sikap,target,bulan,tahun) VALUES (NULL,?,?,?,?,?,?,?,?,?,?)");
             $stmt->execute($data);
 
             return true;
         }
         catch(PDOException $e)
-        {}
+        {
+            echo $e->getMessage();
+        }
     }
 
     public function update($data = array(), $id)
     {
-        // TODO: Implement update() method.
+        try
+        {
+            $data = $this->transformasiData($data);
+            $stmt = $this->conn->prepare("UPDATE tbkinerja SET id_pegawai=?,jml_absensi=?,kejujuran=?,kualitas_kerja=?,cuti=?,kedisiplinan=?,sikap=?,target=?,bulan=?,tahun=? WHERE id_kinerja=$id");
+            $stmt->execute($data);
+
+            return true;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
     }
 
     public function delete($id)
     {
-        // TODO: Implement delete() method.
+        try
+        {
+            $stmt = $this->conn->prepare("DELETE FROM tbkinerja WHERE id_kinerja=$id");
+            $stmt->execute();
+
+            return true;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
+
+    public function getAllDataByIdPegawai($id)
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbkinerja WHERE id_pegawai=$id");
+            $stmt->execute();
+            $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            return $row;
+        }
+        catch(PDOException $e)
+        {
+            return $e->getMessage();
+        }
     }
 
     public function transformasiData($data = array())

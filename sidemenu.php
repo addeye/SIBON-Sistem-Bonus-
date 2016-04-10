@@ -22,7 +22,7 @@
     <a href="?page=customer_all" class=" hvr-bounce-to-right"><i class="fa fa-user-md nav_icon"></i> <span class="nav-label">Customer</span> </a>
 </li>
     <li>
-        <a href="?page=kinerja" class=" hvr-bounce-to-right"><i class="fa fa-area-chart nav_icon"></i> <span class="nav-label">Kinerja</span> </a>
+        <a href="?page=kinerjalistpegawai" class=" hvr-bounce-to-right"><i class="fa fa-area-chart nav_icon"></i> <span class="nav-label">Kinerja</span> </a>
     </li>
 <li>
     <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-cc-discover nav_icon"></i> <span class="nav-label">Data Master</span><span class="fa arrow"></span></a>

@@ -49,20 +49,15 @@ $data = $model->getById($user::pengguna_id());
             <div class="clearfix"></div>
         </div>
         <div class="profile-bottom-bottom">
-            <div class="col-md-4 profile-fo">
+            <div class="col-md-6 profile-fo">
                 <h4><?=$model->getCountCustomerByPegawai($user::pengguna_id())?></h4>
                 <p>Customer</p>
                 <a href="?page=customer" class="pro"><i class="fa fa-plus-circle"></i>Customer</a>
             </div>
-            <div class="col-md-4 profile-fo">
-                <h4>348</h4>
-                <p>Target</p>
-                <a href="#" class="pro1"><i class="fa fa-user"></i>Target</a>
-            </div>
-            <div class="col-md-4 profile-fo">
-                <h4>23,5k</h4>
-                <p>Snippets</p>
-                <a href="#"><i class="fa fa-cog"></i>Options</a>
+            <div class="col-md-6 profile-fo">
+                <h4>-</h4>
+                <p>Edit Profil</p>
+                <a href="?page=profile_edit&id=<?=$data['id_pegawai']?>" class="pro1"><i class="fa fa-user"></i>Edit</a>
             </div>
             <div class="clearfix"></div>
         </div>

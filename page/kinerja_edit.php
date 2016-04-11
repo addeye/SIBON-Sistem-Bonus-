@@ -35,7 +35,7 @@ $data = $model->getById($id);
 $dataPegawai = $modelPeg->getById($_GET['idpegawai']);
 ?>
 
-<h3>Form Kinerja</h3>
+<h3>Form Kinerja Pegawai</h3>
 <div class="grid-form">
 <form class="form-horizontal" method="post">
     <input type="hidden" name="id_pegawai" value="<?=$_GET['idpegawai']?>">

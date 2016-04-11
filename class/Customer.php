@@ -116,7 +116,7 @@ class Customer implements BaseData
 
     public function getLamaKerja($date)
     {
-        
+
     }
 
     public function transformasiData($data = array())

@@ -12,7 +12,7 @@ $dataPeg = $modelPeg->getById($_GET['id']);
 <h3 class="head-top">Kinerja <?=$dataPeg['nama']?></h3>
 <div class="row">
     <div class="col-md-12">
-        <a href="?page=kinerja_edit" class="btn btn-primary"> Tambah</a>
+        <a href="?page=kinerja_edit&idpegawai=<?=$_GET['id']?>&id=0" class="btn btn-primary"> Tambah</a>
         <a href="?page=kinerjalistpegawai" class="btn btn-warning"> Kembali</a>
         <div class="table-responsive">
             <table style="font-size: 12px;" class="table table-striped">
@@ -49,7 +49,7 @@ $dataPeg = $modelPeg->getById($_GET['id']);
                         <td><?= 2 ?></td>
                         <td><?=$data['bulan']?>/<?=$data['tahun']?></td>
                         <td>
-                            <a href="?page=kinerja_edit&id=<?=$data['id_kinerja']?>" class="btn btn-primary btn-xs">Edit</a>
+                            <a href="?page=kinerja_edit&idpegawai=<?=$data['id_pegawai']?>&id=<?=$data['id_kinerja']?>" class="btn btn-primary btn-xs">Edit</a>
                             <button id="<?=$data['id_kinerja']?>" class="btn btn-danger btn-del btn-xs">Delete</button>
                         </td>
                     </tr>

@@ -8,30 +8,92 @@
  */
 class Target implements BaseData
 {
+    private $conn;
+
+    public function __construct()
+    {
+        $database = new Koneksi();
+        $db = $database->dbKoneksi();
+        $this->conn = $db;
+    }
 
     public function getAll()
     {
-        // TODO: Implement getAll() method.
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbtarget");
+            $stmt->execute();
+            $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            return $row;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
     }
 
     public function getById($id)
     {
-        // TODO: Implement getById() method.
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbtarget WHERE id_target=$id");
+            $stmt->execute();
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            return $row;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
     }
 
     public function insert($data = array())
     {
-        // TODO: Implement insert() method.
+        try
+        {
+            $data=$this->transformasiData($data);
+            $stmt = $this->conn->prepare("INSERT INTO tbtarget (id_target,ket,nilai) VALUES (NULL,?,?)");
+            $stmt->execute($data);
+
+            return true;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
     }
 
     public function update($data = array(), $id)
     {
-        // TODO: Implement update() method.
+        try
+        {
+            $data=$this->transformasiData($data);
+            $stmt = $this->conn->prepare("UPDATE tbtarget SET ket=?,nilai=? WHERE id_sikap=$id");
+            $stmt->execute($data);
+
+            return true;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
     }
 
     public function delete($id)
     {
-        // TODO: Implement delete() method.
+        try
+        {
+            $stmt = $this->conn->prepare("DELETE FROM tbtarget WHERE id_target=$id");
+            $stmt->execute();
+
+            return true;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
     }
 
     public function transformasiData($data = array())

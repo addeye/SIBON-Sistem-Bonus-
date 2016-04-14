@@ -53,6 +53,7 @@ class Kejujuran implements BaseData
     {
         try
         {
+            $data=$this->transformasiData($data);
             $stmt = $this->conn->prepare("INSERT INTO tbkejujuran (id_kejujuran,ket,nilai) VALUES (NULL,?,?)");
             $stmt->execute($data);
 
@@ -68,6 +69,7 @@ class Kejujuran implements BaseData
     {
         try
         {
+            $data=$this->transformasiData($data);
             $stmt = $this->conn->prepare("UPDATE tbkejujuran SET ket=?,nilai=? WHERE id_kejujuran=$id");
             $stmt->execute($data);
 

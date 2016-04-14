@@ -54,6 +54,7 @@ class Kedisiplinan implements BaseData
     {
         try
         {
+            $data=$this->transformasiData($data);
             $stmt = $this->conn->prepare("INSERT INTO tbkedisiplinan (id_kedisiplinan,ket,nilai) VALUES (NULL,?,?)");
             $stmt->execute($data);
 
@@ -69,6 +70,7 @@ class Kedisiplinan implements BaseData
     {
         try
         {
+            $data=$this->transformasiData($data);
             $stmt = $this->conn->prepare("UPDATE tbkedisiplinan SET ket=?,nilai=? WHERE id_kedisiplinan=$id");
             $stmt->execute($data);
 

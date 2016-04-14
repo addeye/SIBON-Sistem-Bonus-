@@ -53,6 +53,7 @@ class KualitasKerja implements BaseData
     {
         try
         {
+            $data=$this->transformasiData($data);
             $stmt = $this->conn->prepare("INSERT INTO tbkualitaskerja (id_kualitaskerja,ket,nilai) VALUES (NULL,?,?)");
             $stmt->execute($data);
 
@@ -68,6 +69,7 @@ class KualitasKerja implements BaseData
     {
         try
         {
+            $data=$this->transformasiData($data);
             $stmt = $this->conn->prepare("UPDATE tbkualitaskerja SET ket=?,nilai=? WHERE id_kualitaskerja=$id");
             $stmt->execute($data);
 
@@ -82,7 +84,12 @@ class KualitasKerja implements BaseData
     public function delete($id)
     {
         try
-        {}
+        {
+            $stmt = $this->conn->prepare("DELETE FROM tbkualitaskerja WHERE id_kualitaskerja=$id");
+            $stmt->execute();
+
+            return true;
+        }
         catch(PDOException $e)
         {
             echo $e->getMessage();

@@ -8,6 +8,13 @@
 $model = new Kinerja();
 $modelPeg = new Pegawai();
 $dataPeg = $modelPeg->getById($_GET['id']);
+
+$modelKejujuran = new Kejujuran();
+$modelKualitaskerja = new KualitasKerja();
+$modelKedisiplinan = new Kedisiplinan();
+$modelSikap = new Sikap();
+$modelTarget = new Target();
+
 ?>
 <h3 class="head-top">Kinerja <?=$dataPeg['nama']?></h3>
 <div class="row">
@@ -39,12 +46,12 @@ $dataPeg = $modelPeg->getById($_GET['id']);
                         <td><?=$no++?></td>
                         <td><?=2?></td>
                         <td><?=$data['jml_absensi']?></td>
-                        <td><?=$data['kejujuran']?></td>
-                        <td><?=$data['kualitas_kerja']?></td>
+                        <td><?= $modelKejujuran->getById($data['kejujuran'])['ket'] ?></td>
+                        <td><?= $modelKualitaskerja->getById($data['kualitas_kerja'])['ket'] ?></td>
                         <td><?=$data['cuti']?></td>
-                        <td><?=$data['kedisiplinan']?></td>
-                        <td><?=$data['sikap']?></td>
-                        <td><?=$data['target']?></td>
+                        <td><?= $modelKedisiplinan->getById($data['kedisiplinan'])['ket']?></td>
+                        <td><?= $modelSikap->getById($data['sikap'])['ket']?></td>
+                        <td><?= $modelTarget->getById($data['target'])['ket']?></td>
                         <td><?= 2 ?></td>
                         <td><?= 2 ?></td>
                         <td><?=$data['bulan']?>/<?=$data['tahun']?></td>

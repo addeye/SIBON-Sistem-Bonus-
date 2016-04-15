@@ -39,7 +39,7 @@ class Kejujuran implements BaseData
         {
             $stmt = $this->conn->prepare("SELECT * FROM tbkejujuran WHERE id_kejujuran=$id");
             $stmt->execute();
-            $rowKejujuran = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $rowKejujuran = $stmt->fetch(PDO::FETCH_ASSOC);
 
             return $rowKejujuran;
         }

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fa68a99-108d-4e31-a979-12a3edffe403" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Kedisiplinan.php" afterPath="$PROJECT_DIR$/class/Kedisiplinan.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Kejujuran.php" afterPath="$PROJECT_DIR$/class/Kejujuran.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/KualitasKerja.php" afterPath="$PROJECT_DIR$/class/KualitasKerja.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Sikap.php" afterPath="$PROJECT_DIR$/class/Sikap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Target.php" afterPath="$PROJECT_DIR$/class/Target.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/kinerja_edit.php" afterPath="$PROJECT_DIR$/page/kinerja_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/kinerjapegawai.php" afterPath="$PROJECT_DIR$/page/kinerjapegawai.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SistemBonusPegawai.iws" />
@@ -30,11 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="kinerjapegawai.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kinerjapegawai.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/kinerjapegawai.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2617555">
-              <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+            <state vertical-scroll-proportion="-6.8461537">
+              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SessionTrait.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/class/SessionTrait.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.45297804">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -43,31 +49,9 @@
       <file leaf-file-name="kinerja_edit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/kinerja_edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.5">
-              <caret line="116" column="94" selection-start-line="116" selection-start-column="94" selection-end-line="116" selection-end-column="94" />
-              <folding>
-                <marker date="1460642200472" expanded="true" signature="2237:2589" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="2355:2589" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="2428:2589" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="2816:3008" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="2927:3008" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="3083:3430" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="3199:3430" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="3270:3430" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="3653:3979" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="3762:3979" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="3826:3979" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="4181:4510" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="4291:4510" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="4356:4510" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="4715:5065" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="4833:5065" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="4897:5065" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="5217:5449" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="5281:5449" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="5598:5787" placeholder="..." />
-                <marker date="1460642200472" expanded="true" signature="5645:5787" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,7 +59,7 @@
       <file leaf-file-name="kinerja_act.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/kinerja_act.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
+            <state vertical-scroll-proportion="0.0">
               <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding />
             </state>
@@ -85,17 +69,17 @@
       <file leaf-file-name="Kejujuran.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/Kejujuran.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.576923">
-              <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+            <state vertical-scroll-proportion="-11.038462">
+              <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
               <folding>
-                <marker date="1460630131867" expanded="true" signature="396:421" placeholder="SELECT * FRO..tbkejujuran..." />
-                <marker date="1460630131867" expanded="true" signature="759:804" placeholder="SELECT * FRO..tbkejujuran..." />
-                <marker date="1460630131867" expanded="true" signature="759:805" placeholder="SELECT * FRO..tbkejujuran..." />
-                <marker date="1460630131867" expanded="true" signature="1206:1272" placeholder="INSERT INTO ..." />
-                <marker date="1460630131867" expanded="true" signature="1609:1665" placeholder="UPDATE tbkej..." />
-                <marker date="1460630131867" expanded="true" signature="1609:1666" placeholder="UPDATE tbkej..." />
-                <marker date="1460630131867" expanded="true" signature="1938:1981" placeholder="DELETE FROM ..." />
-                <marker date="1460630131867" expanded="true" signature="1938:1982" placeholder="DELETE FROM ..." />
+                <marker date="1460735053660" expanded="true" signature="396:421" placeholder="SELECT * FRO..tbkejujuran..." />
+                <marker date="1460735053660" expanded="true" signature="759:804" placeholder="SELECT * FRO..tbkejujuran..." />
+                <marker date="1460735053660" expanded="true" signature="759:805" placeholder="SELECT * FRO..tbkejujuran..." />
+                <marker date="1460735053660" expanded="true" signature="1203:1269" placeholder="INSERT INTO ..." />
+                <marker date="1460735053660" expanded="true" signature="1606:1662" placeholder="UPDATE tbkej..." />
+                <marker date="1460735053660" expanded="true" signature="1606:1663" placeholder="UPDATE tbkej..." />
+                <marker date="1460735053660" expanded="true" signature="1935:1978" placeholder="DELETE FROM ..." />
+                <marker date="1460735053660" expanded="true" signature="1935:1979" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -104,7 +88,7 @@
       <file leaf-file-name="KualitasKerja.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/KualitasKerja.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.1923075">
+            <state vertical-scroll-proportion="-27.846153">
               <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
               <folding>
                 <marker date="1460630111238" expanded="true" signature="400:429" placeholder="SELECT * FRO..tbkualitaskerja..." />
@@ -123,7 +107,7 @@
       <file leaf-file-name="Kinerja.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/Kinerja.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="44.576923">
+            <state vertical-scroll-proportion="0.0">
               <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
               <folding>
                 <marker date="1460303223483" expanded="true" signature="394:417" placeholder="SELECT * FRO..tbkinerja..." />
@@ -140,7 +124,7 @@
       <file leaf-file-name="Kedisiplinan.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/Kedisiplinan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.538462">
+            <state vertical-scroll-proportion="0.0">
               <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
               <folding>
                 <marker date="1460630147408" expanded="true" signature="399:427" placeholder="SELECT * FRO..tbkedisiplinan..." />
@@ -159,26 +143,14 @@
       <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="112" column="5" selection-start-line="95" selection-start-column="4" selection-end-line="112" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sikap.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class/Sikap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385">
-              <caret line="17" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="30" column="86" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
               <folding>
-                <marker date="1460611127733" expanded="true" signature="392:413" placeholder="SELECT * FRO..tbsikap..." />
-                <marker date="1460611127733" expanded="true" signature="733:770" placeholder="SELECT * FRO..tbsikap..." />
-                <marker date="1460611127733" expanded="true" signature="733:771" placeholder="SELECT * FRO..tbsikap..." />
-                <marker date="1460611127733" expanded="true" signature="1153:1211" placeholder="INSERT INTO ..." />
-                <marker date="1460611127733" expanded="true" signature="1548:1596" placeholder="UPDATE tbsik..." />
-                <marker date="1460611127733" expanded="true" signature="1869:1904" placeholder="DELETE FROM ..." />
-                <marker date="1460611127733" expanded="true" signature="1869:1905" placeholder="DELETE FROM ..." />
+                <marker date="1459876642704" expanded="true" signature="366:387" placeholder="SELECT * FRO..tbadmin..." />
+                <marker date="1459876642704" expanded="true" signature="581:628" placeholder="SELECT * FRO..tbadmin..." />
+                <marker date="1459876642704" expanded="true" signature="878:968" placeholder="INSERT INTO ..." />
+                <marker date="1459876642704" expanded="true" signature="1455:1515" placeholder="UPDATE tbadm..." />
+                <marker date="1459876642704" expanded="true" signature="1790:1825" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -187,7 +159,7 @@
       <file leaf-file-name="Target.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/Target.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.653846">
+            <state vertical-scroll-proportion="0.0">
               <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
               <folding>
                 <marker date="1460611557710" expanded="true" signature="393:415" placeholder="SELECT * FRO..tbtarget..." />
@@ -246,14 +218,14 @@
         <option value="$PROJECT_DIR$/page/admin.php" />
         <option value="$PROJECT_DIR$/page/kinerja_act.php" />
         <option value="$PROJECT_DIR$/class/Customer.php" />
-        <option value="$PROJECT_DIR$/page/kinerjapegawai.php" />
         <option value="$PROJECT_DIR$/class/SisbonHelper.php" />
         <option value="$PROJECT_DIR$/class/Sikap.php" />
         <option value="$PROJECT_DIR$/class/Target.php" />
         <option value="$PROJECT_DIR$/class/KualitasKerja.php" />
-        <option value="$PROJECT_DIR$/class/Kejujuran.php" />
         <option value="$PROJECT_DIR$/class/Kedisiplinan.php" />
         <option value="$PROJECT_DIR$/page/kinerja_edit.php" />
+        <option value="$PROJECT_DIR$/class/Kejujuran.php" />
+        <option value="$PROJECT_DIR$/page/kinerjapegawai.php" />
       </list>
     </option>
   </component>
@@ -708,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/SessionTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/Customer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -738,33 +703,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="5" selection-start-line="95" selection-start-column="4" selection-end-line="112" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/Sikap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
+        <state vertical-scroll-proportion="0.0">
           <caret line="17" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
           <folding>
-            <marker date="1460611127733" expanded="true" signature="392:413" placeholder="SELECT * FRO..tbsikap..." />
-            <marker date="1460611127733" expanded="true" signature="733:770" placeholder="SELECT * FRO..tbsikap..." />
-            <marker date="1460611127733" expanded="true" signature="733:771" placeholder="SELECT * FRO..tbsikap..." />
-            <marker date="1460611127733" expanded="true" signature="1153:1211" placeholder="INSERT INTO ..." />
-            <marker date="1460611127733" expanded="true" signature="1548:1596" placeholder="UPDATE tbsik..." />
-            <marker date="1460611127733" expanded="true" signature="1869:1904" placeholder="DELETE FROM ..." />
-            <marker date="1460611127733" expanded="true" signature="1869:1905" placeholder="DELETE FROM ..." />
+            <marker date="1460611127733" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbsikap..." />
+            <marker date="1460611127733" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbsikap..." />
+            <marker date="1460611127733" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbsikap..." />
+            <marker date="1460611127733" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1460611127733" expanded="true" signature="-1:-1" placeholder="UPDATE tbsik..." />
+            <marker date="1460611127733" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1460611127733" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/class/Target.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.653846">
+        <state vertical-scroll-proportion="0.0">
           <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
           <folding>
             <marker date="1460611557710" expanded="true" signature="393:415" placeholder="SELECT * FRO..tbtarget..." />
@@ -779,43 +736,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/KualitasKerja.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.1923075">
-          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-          <folding>
-            <marker date="1460630111238" expanded="true" signature="400:429" placeholder="SELECT * FRO..tbkualitaskerja..." />
-            <marker date="1460630111238" expanded="true" signature="749:802" placeholder="SELECT * FRO..tbkualitaskerja..." />
-            <marker date="1460630111238" expanded="true" signature="749:803" placeholder="SELECT * FRO..tbkualitaskerja..." />
-            <marker date="1460630111238" expanded="true" signature="1183:1257" placeholder="INSERT INTO ..." />
-            <marker date="1460630111238" expanded="true" signature="1594:1658" placeholder="UPDATE tbkua..." />
-            <marker date="1460630111238" expanded="true" signature="1594:1659" placeholder="UPDATE tbkua..." />
-            <marker date="1460630111238" expanded="true" signature="1931:1982" placeholder="DELETE FROM ..." />
-            <marker date="1460630111238" expanded="true" signature="1931:1983" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Kejujuran.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.576923">
-          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-          <folding>
-            <marker date="1460630131867" expanded="true" signature="396:421" placeholder="SELECT * FRO..tbkejujuran..." />
-            <marker date="1460630131867" expanded="true" signature="759:804" placeholder="SELECT * FRO..tbkejujuran..." />
-            <marker date="1460630131867" expanded="true" signature="759:805" placeholder="SELECT * FRO..tbkejujuran..." />
-            <marker date="1460630131867" expanded="true" signature="1206:1272" placeholder="INSERT INTO ..." />
-            <marker date="1460630131867" expanded="true" signature="1609:1665" placeholder="UPDATE tbkej..." />
-            <marker date="1460630131867" expanded="true" signature="1609:1666" placeholder="UPDATE tbkej..." />
-            <marker date="1460630131867" expanded="true" signature="1938:1981" placeholder="DELETE FROM ..." />
-            <marker date="1460630131867" expanded="true" signature="1938:1982" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/Kedisiplinan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.538462">
+        <state vertical-scroll-proportion="0.0">
           <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
           <folding>
             <marker date="1460630147408" expanded="true" signature="399:427" placeholder="SELECT * FRO..tbkedisiplinan..." />
@@ -832,7 +755,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/class/Kinerja.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="44.576923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding>
             <marker date="1460303223483" expanded="true" signature="394:417" placeholder="SELECT * FRO..tbkinerja..." />
@@ -847,46 +770,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/kinerja_act.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/class/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="30" column="86" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
+          <folding>
+            <marker date="1459876642704" expanded="true" signature="366:387" placeholder="SELECT * FRO..tbadmin..." />
+            <marker date="1459876642704" expanded="true" signature="581:628" placeholder="SELECT * FRO..tbadmin..." />
+            <marker date="1459876642704" expanded="true" signature="878:968" placeholder="INSERT INTO ..." />
+            <marker date="1459876642704" expanded="true" signature="1455:1515" placeholder="UPDATE tbadm..." />
+            <marker date="1459876642704" expanded="true" signature="1790:1825" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/page/kinerja_edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.5">
-          <caret line="116" column="94" selection-start-line="116" selection-start-column="94" selection-end-line="116" selection-end-column="94" />
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/Kejujuran.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.038462">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
           <folding>
-            <marker date="1460642200472" expanded="true" signature="2237:2589" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="2355:2589" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="2428:2589" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="2816:3008" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="2927:3008" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="3083:3430" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="3199:3430" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="3270:3430" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="3653:3979" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="3762:3979" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="3826:3979" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="4181:4510" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="4291:4510" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="4356:4510" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="4715:5065" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="4833:5065" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="4897:5065" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="5217:5449" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="5281:5449" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="5598:5787" placeholder="..." />
-            <marker date="1460642200472" expanded="true" signature="5645:5787" placeholder="..." />
+            <marker date="1460735053660" expanded="true" signature="396:421" placeholder="SELECT * FRO..tbkejujuran..." />
+            <marker date="1460735053660" expanded="true" signature="759:804" placeholder="SELECT * FRO..tbkejujuran..." />
+            <marker date="1460735053660" expanded="true" signature="759:805" placeholder="SELECT * FRO..tbkejujuran..." />
+            <marker date="1460735053660" expanded="true" signature="1203:1269" placeholder="INSERT INTO ..." />
+            <marker date="1460735053660" expanded="true" signature="1606:1662" placeholder="UPDATE tbkej..." />
+            <marker date="1460735053660" expanded="true" signature="1606:1663" placeholder="UPDATE tbkej..." />
+            <marker date="1460735053660" expanded="true" signature="1935:1978" placeholder="DELETE FROM ..." />
+            <marker date="1460735053660" expanded="true" signature="1935:1979" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/KualitasKerja.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.846153">
+          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+          <folding>
+            <marker date="1460630111238" expanded="true" signature="400:429" placeholder="SELECT * FRO..tbkualitaskerja..." />
+            <marker date="1460630111238" expanded="true" signature="749:802" placeholder="SELECT * FRO..tbkualitaskerja..." />
+            <marker date="1460630111238" expanded="true" signature="749:803" placeholder="SELECT * FRO..tbkualitaskerja..." />
+            <marker date="1460630111238" expanded="true" signature="1183:1257" placeholder="INSERT INTO ..." />
+            <marker date="1460630111238" expanded="true" signature="1594:1658" placeholder="UPDATE tbkua..." />
+            <marker date="1460630111238" expanded="true" signature="1594:1659" placeholder="UPDATE tbkua..." />
+            <marker date="1460630111238" expanded="true" signature="1931:1982" placeholder="DELETE FROM ..." />
+            <marker date="1460630111238" expanded="true" signature="1931:1983" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/kinerjapegawai.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2617555">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        <state vertical-scroll-proportion="-6.8461537">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/SessionTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45297804">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
           <folding />
         </state>
       </provider>

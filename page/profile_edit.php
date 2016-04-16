@@ -36,7 +36,7 @@ $data = $model->getById($id);
 
 ?>
 
-<h3>Form Pegawai</h3>
+<h3>Edit Profil</h3>
 <div class="grid-form">
 <form class="form-horizontal" method="post">
     <div class="form-group">

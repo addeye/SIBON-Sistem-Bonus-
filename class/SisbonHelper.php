@@ -37,3 +37,15 @@ if(!function_exists('getTahun'))
         ];
     }
 }
+
+if(!function_exists('countDate'))
+{
+    function countDate($date)
+    {
+        $dt1 = new DateTime($date);
+        $dt2 = new DateTime(date('Y-m-d'));
+        $telat = $dt1->diff($dt2);
+
+        return $telat->days;
+    }
+}

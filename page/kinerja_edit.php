@@ -21,7 +21,7 @@ if($_GET['id']!=0) {
         $result = $model->update($data, $id);
 
         if ($result) {
-            $user->redirect('index.php?page=kinerjapegawai&id=1');
+            $user->redirect('index.php?page=kinerjapegawai&id='.$_GET['idpegawai']);
         }
     }
 }
@@ -32,7 +32,7 @@ else
         $result = $model->insert($data);
 
         if ($result) {
-            $user->redirect('index.php?page=kinerjapegawai&id=1');
+            $user->redirect('index.php?page=kinerjapegawai&id='.$_GET['idpegawai']);
         }
     }
 }

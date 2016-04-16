@@ -53,7 +53,7 @@
         <a href="index.php" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Dashboards</span> </a>
     </li>
     <li>
-        <a href="?page=pegawai" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Reward</span> </a>
+        <a href="?page=reward" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Reward</span> </a>
     </li>
     <li>
         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Info Trip</span> </a>

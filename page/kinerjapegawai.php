@@ -8,6 +8,7 @@
 $model = new Kinerja();
 $modelPeg = new Pegawai();
 $dataPeg = $modelPeg->getById($_GET['id']);
+$modelCus = new Customer();
 
 $modelKejujuran = new Kejujuran();
 $modelKualitaskerja = new KualitasKerja();
@@ -44,7 +45,7 @@ $modelTarget = new Target();
                     ?>
                     <tr>
                         <td><?=$no++?></td>
-                        <td><?=2?></td>
+                        <td><?=countDate($dataPeg['tgl_masuk'])?> Hari</td>
                         <td><?=$data['jml_absensi']?></td>
                         <td><?= $modelKejujuran->getById($data['kejujuran'])['ket'] ?></td>
                         <td><?= $modelKualitaskerja->getById($data['kualitas_kerja'])['ket'] ?></td>
@@ -52,7 +53,7 @@ $modelTarget = new Target();
                         <td><?= $modelKedisiplinan->getById($data['kedisiplinan'])['ket']?></td>
                         <td><?= $modelSikap->getById($data['sikap'])['ket']?></td>
                         <td><?= $modelTarget->getById($data['target'])['ket']?></td>
-                        <td><?= 2 ?></td>
+                        <td><?= $modelCus->getCustomerByBulanTahun($data['bulan'],$data['tahun'],$_GET['id']) ?></td>
                         <td><?= 2 ?></td>
                         <td><?=$data['bulan']?>/<?=$data['tahun']?></td>
                         <td>

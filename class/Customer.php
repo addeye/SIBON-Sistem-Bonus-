@@ -161,4 +161,13 @@ class Customer implements BaseData
 
         return $result;
     }
+
+    public function getCustomerByBulanTahun($month,$year,$idpeg)
+    {
+        $stmt = $this->conn->prepare("SELECT * FROM tbcustomer WHERE bulan='$month' and tahun=$year and id_pegawai=$idpeg");
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $stmt->rowCount();
+    }
 }

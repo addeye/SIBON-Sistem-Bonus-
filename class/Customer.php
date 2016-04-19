@@ -114,8 +114,20 @@ class Customer implements BaseData
         }
     }
 
-    public function getLamaKerja($date)
+    public function getPegawaiByBulanTahun($data = array())
     {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT c.*,p.nama nama_pegawai,p.email email_pegawai, p.alamat alamat_pegawai FROM tbcustomer c inner join tbpegawai p on c.id_pegawai=p.id_pegawai WHERE c.bulan=:bulan and c.tahun=:tahun and c.id_customer=:idcus");
+            $stmt->execute(array(':bulan'=>$data['bulan'],':tahun'=>$data['tahun'],':idcus'=>$data['id']));
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            return $row;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
 
     }
 

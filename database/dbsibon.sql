@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2016 at 03:12 PM
+-- Generation Time: Apr 21, 2016 at 06:51 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `tbcustomer` (
   `bulan` varchar(20) NOT NULL,
   `tahun` varchar(5) NOT NULL,
   PRIMARY KEY (`id_customer`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `tbcustomer`
@@ -73,7 +73,10 @@ INSERT INTO `tbcustomer` (`id_customer`, `id_pegawai`, `nama`, `no_telp`, `alama
 (4, 1, 'Anik Sumiarsih', '081217806522', 'Jl Jetis Kulon Gang 6', 'anik@gmail.com', '123', '2016-04-10', 'januari', '2016'),
 (6, 3, 'Nada Salalillah', '085730534127', 'Jl Bowongan Pacitan', 'nada@gmail.com', '123', '2016-04-16', 'januari', '2016'),
 (7, 3, 'Nuraeni', '085730534127', 'Jl Lontar No 18', 'eni@gmail.com', '123', '2016-04-16', 'januari', '2016'),
-(8, 3, 'Dimas Iqbal', '081217806522', 'Jl Mawar 12A', 'dimas@gmail.com', '123', '2016-04-16', 'januari', '2016');
+(8, 3, 'Dimas Iqbal', '081217806522', 'Jl Mawar 12A', 'dimas@gmail.com', '123', '2016-04-16', 'januari', '2016'),
+(9, 4, 'Luluk Arfiana', '081217806522', 'Jl Kemodo Mojoagung Jombang', 'luluk@gmail.com', '123', '2016-04-21', 'januari', '2016'),
+(10, 4, 'Usi Suliswati', '085730534127', 'Jl Bowongan Arjowinangun Pacitan', 'usi@gmail.com', '123', '2016-04-21', 'januari', '2016'),
+(11, 4, 'Ferry Eka Wahyuni', '081217807622', 'Jl Kemodo Mojoagung Jombang', 'feri@gmail.com', '123', '2016-04-21', 'januari', '2016');
 
 -- --------------------------------------------------------
 
@@ -139,18 +142,16 @@ CREATE TABLE IF NOT EXISTS `tbkinerja` (
   `bulan` varchar(20) NOT NULL,
   `tahun` varchar(5) NOT NULL,
   PRIMARY KEY (`id_kinerja`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `tbkinerja`
 --
 
 INSERT INTO `tbkinerja` (`id_kinerja`, `id_pegawai`, `jml_absensi`, `kejujuran`, `kualitas_kerja`, `cuti`, `kedisiplinan`, `sikap`, `target`, `bulan`, `tahun`) VALUES
-(2, 1, 20, 2, 3, 2, 2, 2, 2, 'februari', '2016'),
-(3, 1, 16, 3, 3, 4, 2, 1, 2, 'maret', '2016'),
 (4, 1, 20, 2, 3, 1, 2, 2, 2, 'januari', '2016'),
 (5, 3, 20, 1, 3, 0, 2, 2, 1, 'januari', '2016'),
-(6, 3, 25, 2, 3, 1, 2, 2, 1, 'februari', '2016');
+(7, 4, 20, 2, 2, 1, 1, 2, 1, 'januari', '2016');
 
 -- --------------------------------------------------------
 
@@ -190,7 +191,7 @@ CREATE TABLE IF NOT EXISTS `tbpegawai` (
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`id_pegawai`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `tbpegawai`
@@ -198,7 +199,8 @@ CREATE TABLE IF NOT EXISTS `tbpegawai` (
 
 INSERT INTO `tbpegawai` (`id_pegawai`, `nama`, `tgl_lahir`, `no_telp`, `alamat`, `tgl_masuk`, `email`, `password`) VALUES
 (1, 'Sandy Setiawan', '1993-01-27', '081217806522', 'Jl Mawar 27 Surabaya', '2016-01-09', 'sandy@gmail.com', '123'),
-(3, 'Amirul', '1993-03-23', '085730534127', 'Jl Ketintang Madya 14A', '2016-04-09', 'amirul@gmail.com', '123');
+(3, 'Amirul', '1993-03-23', '085730534127', 'Jl Ketintang Madya 14A', '2016-04-09', 'amirul@gmail.com', '123'),
+(4, 'Satria Hernanda', '1993-04-21', '085730534127', 'Jl Manukan 23 A Surabaya', '2016-01-02', 'satria@gmail.com', '123');
 
 -- --------------------------------------------------------
 
@@ -214,14 +216,22 @@ CREATE TABLE IF NOT EXISTS `tbreward` (
   `bulan` varchar(20) NOT NULL,
   `tahun` varchar(5) NOT NULL,
   PRIMARY KEY (`id_reward`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `tbreward`
 --
 
 INSERT INTO `tbreward` (`id_reward`, `id_pegawai`, `id_customer`, `jumlah_nilai`, `bulan`, `tahun`) VALUES
-(1, 1, 1, 4, 'januari', '2016');
+(1, 1, 1, 5, 'januari', '2016'),
+(3, 1, 4, 3, 'januari', '2016'),
+(4, 3, 8, 4, 'januari', '2016'),
+(5, 3, 7, 3, 'januari', '2016'),
+(6, 3, 6, 5, 'januari', '2016'),
+(7, 3, 3, 4, 'januari', '2016'),
+(8, 4, 9, 4, 'januari', '2016'),
+(9, 4, 11, 3, 'januari', '2016'),
+(10, 4, 10, 5, 'januari', '2016');
 
 -- --------------------------------------------------------
 

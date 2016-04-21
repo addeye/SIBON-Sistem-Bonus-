@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2016 at 04:12 PM
+-- Generation Time: Apr 21, 2016 at 03:12 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `tbadmin` (
   `email` varchar(50) NOT NULL,
   `password` varchar(100) NOT NULL,
   PRIMARY KEY (`id_admin`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `tbadmin`
@@ -41,8 +41,7 @@ CREATE TABLE IF NOT EXISTS `tbadmin` (
 INSERT INTO `tbadmin` (`id_admin`, `nama`, `email`, `password`) VALUES
 (1, 'Admin ', 'admin@gmail.com', '123'),
 (3, 'deye', 'deye@gmail.com', '123'),
-(6, 'Sutinah', 'sutinah@gmail.com', '123'),
-(7, ' Mokhamad Ariadi', 'mokhamad27@gmail.com', '123');
+(6, 'Sutinah', 'sutinah@gmail.com', '123');
 
 -- --------------------------------------------------------
 
@@ -62,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `tbcustomer` (
   `bulan` varchar(20) NOT NULL,
   `tahun` varchar(5) NOT NULL,
   PRIMARY KEY (`id_customer`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `tbcustomer`
@@ -71,7 +70,55 @@ CREATE TABLE IF NOT EXISTS `tbcustomer` (
 INSERT INTO `tbcustomer` (`id_customer`, `id_pegawai`, `nama`, `no_telp`, `alamat`, `email`, `password`, `tgl_input`, `bulan`, `tahun`) VALUES
 (1, 1, 'Juniar Sandra P', '085730534127', 'Jl Darjo Surabaya', 'juniar@gmail.com', '123', '2016-04-09', 'januari', '2016'),
 (3, 3, 'Noviagati Pramudia', '089679730967', 'Jl Bowongan Pacitan', 'noviku@gmail.com', '123', '2016-04-09', 'januari', '2016'),
-(4, 1, 'Anik Sumiarsih', '081217806522', 'Jl Jetis Kulon Gang 6', 'anik@gmail.com', '123', '2016-04-10', 'januari', '2016');
+(4, 1, 'Anik Sumiarsih', '081217806522', 'Jl Jetis Kulon Gang 6', 'anik@gmail.com', '123', '2016-04-10', 'januari', '2016'),
+(6, 3, 'Nada Salalillah', '085730534127', 'Jl Bowongan Pacitan', 'nada@gmail.com', '123', '2016-04-16', 'januari', '2016'),
+(7, 3, 'Nuraeni', '085730534127', 'Jl Lontar No 18', 'eni@gmail.com', '123', '2016-04-16', 'januari', '2016'),
+(8, 3, 'Dimas Iqbal', '081217806522', 'Jl Mawar 12A', 'dimas@gmail.com', '123', '2016-04-16', 'januari', '2016');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbkedisiplinan`
+--
+
+CREATE TABLE IF NOT EXISTS `tbkedisiplinan` (
+  `id_kedisiplinan` int(11) NOT NULL AUTO_INCREMENT,
+  `ket` varchar(50) NOT NULL,
+  `nilai` int(11) NOT NULL,
+  PRIMARY KEY (`id_kedisiplinan`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `tbkedisiplinan`
+--
+
+INSERT INTO `tbkedisiplinan` (`id_kedisiplinan`, `ket`, `nilai`) VALUES
+(1, 'Sangat Baik', 5),
+(2, 'Baik', 3),
+(3, 'Cukup', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbkejujuran`
+--
+
+CREATE TABLE IF NOT EXISTS `tbkejujuran` (
+  `id_kejujuran` int(11) NOT NULL AUTO_INCREMENT,
+  `ket` varchar(50) NOT NULL,
+  `nilai` int(11) NOT NULL,
+  PRIMARY KEY (`id_kejujuran`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tbkejujuran`
+--
+
+INSERT INTO `tbkejujuran` (`id_kejujuran`, `ket`, `nilai`) VALUES
+(1, 'Sangat Baik', 5),
+(2, 'Baik', 4),
+(3, 'Cukup', 3),
+(4, 'Jelek', 1);
 
 -- --------------------------------------------------------
 
@@ -89,10 +136,43 @@ CREATE TABLE IF NOT EXISTS `tbkinerja` (
   `kedisiplinan` int(11) NOT NULL,
   `sikap` int(11) NOT NULL,
   `target` int(11) NOT NULL,
-  `bulan` varchar(2) NOT NULL,
+  `bulan` varchar(20) NOT NULL,
   `tahun` varchar(5) NOT NULL,
   PRIMARY KEY (`id_kinerja`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `tbkinerja`
+--
+
+INSERT INTO `tbkinerja` (`id_kinerja`, `id_pegawai`, `jml_absensi`, `kejujuran`, `kualitas_kerja`, `cuti`, `kedisiplinan`, `sikap`, `target`, `bulan`, `tahun`) VALUES
+(2, 1, 20, 2, 3, 2, 2, 2, 2, 'februari', '2016'),
+(3, 1, 16, 3, 3, 4, 2, 1, 2, 'maret', '2016'),
+(4, 1, 20, 2, 3, 1, 2, 2, 2, 'januari', '2016'),
+(5, 3, 20, 1, 3, 0, 2, 2, 1, 'januari', '2016'),
+(6, 3, 25, 2, 3, 1, 2, 2, 1, 'februari', '2016');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbkualitaskerja`
+--
+
+CREATE TABLE IF NOT EXISTS `tbkualitaskerja` (
+  `id_kualitaskerja` int(11) NOT NULL AUTO_INCREMENT,
+  `ket` varchar(50) NOT NULL,
+  `nilai` int(11) NOT NULL,
+  PRIMARY KEY (`id_kualitaskerja`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `tbkualitaskerja`
+--
+
+INSERT INTO `tbkualitaskerja` (`id_kualitaskerja`, `ket`, `nilai`) VALUES
+(1, 'Jelek', 1),
+(2, 'Cukup', 3),
+(3, 'Baik', 4);
 
 -- --------------------------------------------------------
 
@@ -117,7 +197,7 @@ CREATE TABLE IF NOT EXISTS `tbpegawai` (
 --
 
 INSERT INTO `tbpegawai` (`id_pegawai`, `nama`, `tgl_lahir`, `no_telp`, `alamat`, `tgl_masuk`, `email`, `password`) VALUES
-(1, 'Sandy S', '1993-01-27', '081217806522', 'Jl Mawar 27 Surabaya', '2016-04-09', 'sandy@gmail.com', '123'),
+(1, 'Sandy Setiawan', '1993-01-27', '081217806522', 'Jl Mawar 27 Surabaya', '2016-01-09', 'sandy@gmail.com', '123'),
 (3, 'Amirul', '1993-03-23', '085730534127', 'Jl Ketintang Madya 14A', '2016-04-09', 'amirul@gmail.com', '123');
 
 -- --------------------------------------------------------
@@ -131,8 +211,62 @@ CREATE TABLE IF NOT EXISTS `tbreward` (
   `id_pegawai` int(11) NOT NULL,
   `id_customer` int(11) NOT NULL,
   `jumlah_nilai` int(11) NOT NULL,
+  `bulan` varchar(20) NOT NULL,
+  `tahun` varchar(5) NOT NULL,
   PRIMARY KEY (`id_reward`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `tbreward`
+--
+
+INSERT INTO `tbreward` (`id_reward`, `id_pegawai`, `id_customer`, `jumlah_nilai`, `bulan`, `tahun`) VALUES
+(1, 1, 1, 4, 'januari', '2016');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbsikap`
+--
+
+CREATE TABLE IF NOT EXISTS `tbsikap` (
+  `id_sikap` int(11) NOT NULL AUTO_INCREMENT,
+  `ket` varchar(50) NOT NULL,
+  `nilai` int(11) NOT NULL,
+  PRIMARY KEY (`id_sikap`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tbsikap`
+--
+
+INSERT INTO `tbsikap` (`id_sikap`, `ket`, `nilai`) VALUES
+(1, 'Sangat Baik', 5),
+(2, 'Baik', 4),
+(3, 'Cukup', 2),
+(4, 'Tidak Baik', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbtarget`
+--
+
+CREATE TABLE IF NOT EXISTS `tbtarget` (
+  `id_target` int(11) NOT NULL AUTO_INCREMENT,
+  `ket` varchar(50) NOT NULL,
+  `nilai` int(11) NOT NULL,
+  PRIMARY KEY (`id_target`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `tbtarget`
+--
+
+INSERT INTO `tbtarget` (`id_target`, `ket`, `nilai`) VALUES
+(1, 'Memenuhi', 5),
+(2, 'Hampir Memenuhi', 2),
+(3, 'Belum Memenuhi', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

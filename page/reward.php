@@ -7,11 +7,25 @@
  */
 $data = array();
 $customer = new Customer();
-
+$reward = new Reward();
+$id = 0;
 if(isset($_POST['proses']))
 {
     $data = $_POST;
     $row = $customer->getPegawaiByBulanTahun($data);
+    $rowRe = $reward->getDataWhere($row['bulan'],$row['tahun'],$row['id_pegawai'],$row['id_customer']);
+    $id=$rowRe['id_reward'];
+}
+
+if(isset($_POST['submit']))
+{
+    $data = $_POST;
+    $result = $reward->insert($data);
+
+    if($result)
+    {
+        $meesage = "Terimakasih telah memberikan penilaian";
+    }
 }
 
 ?>
@@ -43,11 +57,25 @@ if(isset($_POST['proses']))
 </form>
     </div>
 </div>
+<?php if(isset($meesage)){?>
+<div class="col-md-12">
+    <div class="grid-form">
+        <div class="alert alert-success" role="alert">
+            <strong>Terimakasih ! </strong> Telah memberikan penilaian.
+        </div>
+    </div>
+</div>
+<?php } ?>
 <hr>
 <div class="row">
     <?php if(isset($_POST['proses'])) {?>
         <div class="col-md-12">
-            <form class="form-horizontal">
+            <form class="form-horizontal" method="post">
+                <input type="hidden" name="id_customer" value="<?=$user->pengguna_id()?>">
+                <input type="hidden" name="id_reward" value="<?=$id?>">
+                <input type="hidden" name="id_pegawai" value="<?=$row['id_pegawai']?>">
+                <input type="hidden" name="bulan" value="<?=$row['bulan']?>">
+                <input type="hidden" name="tahun" value="<?=$row['tahun']?>">
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Nama Pegawai : </label>
                     <div class="col-md-10">
@@ -71,11 +99,11 @@ if(isset($_POST['proses']))
                     <div class="col-md-4">
                         <select style="font-size: 25px" class="form-control" name="jumlah_nilai" required>
                             <option value=""></option>
-                            <option value="1">*</option>
-                            <option value="2">**</option>
-                            <option value="3">***</option>
-                            <option value="4">****</option>
-                            <option value="5">*****</option>
+                            <option value="1" <?=$rowRe['jumlah_nilai']==1?'selected':''?> >*</option>
+                            <option value="2" <?=$rowRe['jumlah_nilai']==2?'selected':''?> >**</option>
+                            <option value="3" <?=$rowRe['jumlah_nilai']==3?'selected':''?> >***</option>
+                            <option value="4" <?=$rowRe['jumlah_nilai']==4?'selected':''?> >****</option>
+                            <option value="5" <?=$rowRe['jumlah_nilai']==5?'selected':''?> >*****</option>
                         </select>
                     </div>
                 </div>

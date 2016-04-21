@@ -54,7 +54,7 @@ class Reward implements BaseData
         try
         {
             $data = $this->transformasiData($data);
-            $stmt = $this->conn->prepare("INSERT INTO tbreward (id_reward,id_pegawai,id_customer,jumlah_nilai) VALUES (NULL,?,?,?)");
+            $stmt = $this->conn->prepare("INSERT INTO tbreward (id_reward,id_pegawai,id_customer,jumlah_nilai,bulan,tahun) VALUES (NULL,?,?,?,?,?)");
             $stmt->execute($data);
 
             return true;
@@ -70,7 +70,7 @@ class Reward implements BaseData
         try
         {
             $data = $this->transformasiData($data);
-            $stmt = $this->conn->prepare("UPDATE tbreward SET id_pegawai=?,id_customer=?,jumlah_nilai=? WHERE id_reward=$id");
+            $stmt = $this->conn->prepare("UPDATE tbreward SET id_pegawai=?,id_customer=?,jumlah_nilai=?,bulan=?,tahun=? WHERE id_reward=$id");
             $stmt->execute($data);
 
             return true;
@@ -96,6 +96,22 @@ class Reward implements BaseData
         }
     }
 
+    public function getDataWhere($bulan,$tahun,$id_pegawai,$id_customer)
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbreward WHERE id_pegawai=:idpegawai and id_customer=:idcustomer and bulan=:bulan and tahun=:tahun");
+            $stmt->execute(array(':idpegawai'=>$id_pegawai,':idcustomer'=>$id_customer,':bulan'=>$bulan,':tahun'=>$tahun));
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            return $row;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
+
     public function transformasiData($data = array())
     {
         $result = array();
@@ -110,6 +126,14 @@ class Reward implements BaseData
         if($data['jumlah_nilai']!='')
         {
             $result[]=$data['jumlah_nilai'];
+        }
+        if($data['bulan']!='')
+        {
+            $result[]=$data['bulan'];
+        }
+        if($data['tahun']!='')
+        {
+            $result[]=$data['tahun'];
         }
         return $result;
     }

@@ -24,6 +24,9 @@
     <li>
         <a href="?page=kinerjalistpegawai" class=" hvr-bounce-to-right"><i class="fa fa-area-chart nav_icon"></i> <span class="nav-label">Kinerja</span> </a>
     </li>
+    <li>
+        <a href="?page=normalisasi" class=" hvr-bounce-to-right"><i class="fa fa-area-chart nav_icon"></i> <span class="nav-label">Normalisasi</span> </a>
+    </li>
 <li>
     <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-cc-discover nav_icon"></i> <span class="nav-label">Data Master</span><span class="fa arrow"></span></a>
     <ul class="nav nav-second-level">

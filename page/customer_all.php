@@ -39,26 +39,3 @@ $modelPeg = new Pegawai();
         </tr>
     <?php } ?>
 </table>
-
-<script>
-    $('.btn-del').click(function(){
-        var id = this.id;
-        console.log(id);
-        var rest = confirm('Apakah Anda yakin');
-        if(rest) {
-            $.ajax({
-                method: "GET",
-                url: "page/customer_act.php?delete&id="+id
-//                data: { name: "John", location: "Boston" }
-            })
-                .success(function(msg){
-                    console.log(msg);
-                })
-                .done(function() {
-                    location.reload();
-                });
-        } else {
-            return false;
-        }
-    });
-</script>

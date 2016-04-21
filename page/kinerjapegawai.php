@@ -15,6 +15,7 @@ $modelKualitaskerja = new KualitasKerja();
 $modelKedisiplinan = new Kedisiplinan();
 $modelSikap = new Sikap();
 $modelTarget = new Target();
+$modelReward = new Reward();
 
 ?>
 <h3 class="head-top">Kinerja <?=$dataPeg['nama']?></h3>
@@ -54,7 +55,7 @@ $modelTarget = new Target();
                         <td><?= $modelSikap->getById($data['sikap'])['ket']?></td>
                         <td><?= $modelTarget->getById($data['target'])['ket']?></td>
                         <td><?= $modelCus->getCustomerByBulanTahun($data['bulan'],$data['tahun'],$_GET['id']) ?></td>
-                        <td><?= 2 ?></td>
+                        <td><?= $modelReward->getDataWherePegawai($data['bulan'],$data['tahun'],$_GET['id'])['total'] ?></td>
                         <td><?=$data['bulan']?>/<?=$data['tahun']?></td>
                         <td>
                             <a href="?page=kinerja_edit&idpegawai=<?=$data['id_pegawai']?>&id=<?=$data['id_kinerja']?>" class="btn btn-primary btn-xs">Edit</a>

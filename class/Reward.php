@@ -112,6 +112,22 @@ class Reward implements BaseData
         }
     }
 
+    public function getDataWherePegawai($bulan,$tahun,$id_pegawai)
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT SUM(jumlah_nilai) as total FROM tbreward WHERE id_pegawai=:idpegawai and bulan=:bulan and tahun=:tahun");
+            $stmt->execute(array(':idpegawai'=>$id_pegawai,':bulan'=>$bulan,':tahun'=>$tahun));
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            return $row;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
+
     public function transformasiData($data = array())
     {
         $result = array();

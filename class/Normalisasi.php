@@ -31,4 +31,9 @@ class Normalisasi
         $result = $bencost*$kriteria;
         return $result;
     }
+
+    public function metodeSaw($data=array())
+    {
+
+    }
 }

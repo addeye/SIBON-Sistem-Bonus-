@@ -28,6 +28,9 @@ if(isset($_POST['proses']))
     $row = $model->getAllByBulanTahun($_POST['bulan'],$_POST['tahun']);
 }
 
+$rowData = $model->getAllByBulanTahun('januari','2016');
+
+
 ?>
 
 <h3 class="head-top">Data Customer</h3>

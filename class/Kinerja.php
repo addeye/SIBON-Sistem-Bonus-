@@ -6,15 +6,28 @@
  * Date: 10/04/2016
  * Time: 20:37
  */
+include "SisbonHelper.php";
+
 class Kinerja implements BaseData
 {
     private $conn;
+    private $customer;
+    private $reward;
 
     public function __construct()
     {
         $database = new Koneksi();
         $db = $database->dbKoneksi();
         $this->conn = $db;
+
+        $pegawai = new Pegawai();
+        $this->pegawai = $pegawai;
+
+        $customer = new Customer();
+        $this->customer = $customer;
+
+        $reward = new Reward();
+        $this->reward = $reward;
     }
 
     public function getAll()
@@ -127,6 +140,15 @@ class Kinerja implements BaseData
         {
             echo $e->getMessage();
         }
+    }
+
+    public function getAllDataKinerja($bulan,$tahun)
+    {
+        $stmt = $this->conn->prepare("SELECT k.*,p.nama,p.tgl_masuk FROM tbkinerja k INNER JOIN tbpegawai p ON k.id_pegawai=p.id_pegawai WHERE k.bulan='$bulan' and k.tahun='$tahun'");
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $row;
     }
 
     public function transformasiData($data = array())

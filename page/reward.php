@@ -20,7 +20,15 @@ if(isset($_POST['proses']))
 if(isset($_POST['submit']))
 {
     $data = $_POST;
-    $result = $reward->insert($data);
+    if($_POST['id_reward']!=0)
+    {
+        $result = $reward->update($data,$_POST['id_reward']);
+    }
+    else
+    {
+        $result = $reward->insert($data);
+    }
+
 
     if($result)
     {

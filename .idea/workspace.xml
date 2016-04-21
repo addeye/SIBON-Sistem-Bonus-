@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fa68a99-108d-4e31-a979-12a3edffe403" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Reward.php" afterPath="$PROJECT_DIR$/class/Reward.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/dbsibon.sql" afterPath="$PROJECT_DIR$/database/dbsibon.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/reward.php" afterPath="$PROJECT_DIR$/page/reward.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SistemBonusPegawai.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,8 +89,8 @@
       <file leaf-file-name="reward.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/reward.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.40595612">
+              <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -142,8 +139,8 @@
       <file leaf-file-name="Reward.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/Reward.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+            <state vertical-scroll-proportion="-6.6923075">
+              <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
               <folding>
                 <marker date="1461200188319" expanded="true" signature="392:414" placeholder="SELECT * FRO..tbreward..." />
                 <marker date="1461200188319" expanded="true" signature="734:773" placeholder="SELECT * FRO..tbreward..." />
@@ -281,6 +278,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemBonusPegawai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemBonusPegawai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -768,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/class/Reward.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+        <state vertical-scroll-proportion="-6.6923075">
+          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
           <folding>
             <marker date="1461200188319" expanded="true" signature="392:414" placeholder="SELECT * FRO..tbreward..." />
             <marker date="1461200188319" expanded="true" signature="734:773" placeholder="SELECT * FRO..tbreward..." />
@@ -783,8 +794,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/reward.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.40595612">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
           <folding />
         </state>
       </provider>

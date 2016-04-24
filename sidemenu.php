@@ -31,7 +31,7 @@
     <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-cc-discover nav_icon"></i> <span class="nav-label">Data Master</span><span class="fa arrow"></span></a>
     <ul class="nav nav-second-level">
         <li><a href="?page=kota" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Data Kota</a></li>
-        <li><a href="#" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Data Trip</a></li>
+        <li><a href="?page=trip" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Data Trip</a></li>
     </ul>
 </li>
 <?php } ?>
@@ -59,6 +59,6 @@
         <a href="?page=reward" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Reward</span> </a>
     </li>
     <li>
-        <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Info Trip</span> </a>
+        <a href="?page=wish" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Info Trip</span> </a>
     </li>
 <?php } ?>

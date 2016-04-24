@@ -4,9 +4,9 @@
  * Created by PhpStorm.
  * User: deyelovi
  * Date: 24/04/2016
- * Time: 21:04
+ * Time: 23:16
  */
-class Wishlist implements BaseData
+class Wish implements BaseData
 {
     //Koneksi
     private $conn;
@@ -23,7 +23,7 @@ class Wishlist implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("SELECT * FROM tbwishlist");
+            $stmt = $this->conn->prepare("SELECT * FROM tbwish");
             $stmt->execute();
             $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -39,7 +39,7 @@ class Wishlist implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("SELECT * FROM tbwishlist WHERE id_wishlist=$id");
+            $stmt = $this->conn->prepare("SELECT * FROM tbwish WHERE id_wish=$id");
             $stmt->execute();
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -55,11 +55,10 @@ class Wishlist implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("INSERT INTO tbwishlist (id_wishlist,id_wish,id_customer,id_trip) VALUES (NULL,:idwish,:idcustomer,:idtrip)");
+            $stmt = $this->conn->prepare("INSERT INTO tbwish (id_wish,ket,jml) VALUES (NULL,:ket,:jml)");
             $stmt->execute(array(
-                ':idwish'=>$data['id_wish'],
-                ':idcustomer'=>$data['id_customer'],
-                ':idtrip' => $data['id_trip']
+                ':ket'=>$data['ket'],
+                ':jml' => $data['jml']
             ));
 
             return true;
@@ -74,8 +73,11 @@ class Wishlist implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("UPDATE tbwishlist SET id_trip=:idtrip WHERE id_wishlist=$id");
-            $stmt->execute(array(':idtrip'=>$data['id_trip']));
+            $stmt = $this->conn->prepare("UPDATE tbwish SET ket=:ket,jml=:jml WHERE id_wish=$id");
+            $stmt->execute(array(
+                ':ket'=>$data['ket'],
+                ':jml'=>$data['jml'],
+            ));
 
             return true;
         }
@@ -89,22 +91,7 @@ class Wishlist implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("DELETE FROM tbwishlist WHERE id_wishlist=$id");
-            $stmt->execute();
-
-            return true;
-        }
-        catch(PDOException $e)
-        {
-            echo $e->getMessage();
-        }
-    }
-
-    public function deleteByIdWish($id)
-    {
-        try
-        {
-            $stmt = $this->conn->prepare("DELETE FROM tbwishlist WHERE id_wish=$id");
+            $stmt = $this->conn->prepare("DELETE FROM tbwish WHERE id_wish=$id");
             $stmt->execute();
 
             return true;

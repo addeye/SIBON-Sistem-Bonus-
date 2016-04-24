@@ -14,7 +14,9 @@ ob_start();
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/font-awesome.css" rel="stylesheet">
+	<!--	Sortable-->
+<!--	<link href="css/sortable.css" rel="stylesheet">-->
 <script src="js/jquery.min.js"> </script>
 <!-- Mainly scripts -->
 <script src="js/jquery.metisMenu.js"></script>
@@ -129,6 +131,21 @@ ob_start();
 	<script src="js/scripts.js"></script>
 	<!--//scrolling js-->
 	<script src="js/bootstrap.min.js"> </script>
+	<script src="js/jquery.sortable.js"></script>
+<script>
+	$(function() {
+		$('.sortable').sortable();
+		$('.handles').sortable({
+			handle: 'span'
+		});
+		$('.connected').sortable({
+			connectWith: '.connected'
+		});
+		$('.exclude').sortable({
+			items: ':not(.disabled)'
+		});
+	});
+</script>
 </body>
 </html>
 

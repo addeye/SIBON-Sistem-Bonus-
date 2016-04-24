@@ -8,6 +8,7 @@
  */
 class Admin implements BaseData
 {
+    //Koneksi
     private $conn;
 
     public function __construct()
@@ -16,6 +17,7 @@ class Admin implements BaseData
         $db = $database->dbKoneksi();
         $this->conn = $db;
     }
+    //End Koneksi
 
     public function getAll()
     {

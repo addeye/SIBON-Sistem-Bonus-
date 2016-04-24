@@ -30,8 +30,8 @@
 <li>
     <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-cc-discover nav_icon"></i> <span class="nav-label">Data Master</span><span class="fa arrow"></span></a>
     <ul class="nav nav-second-level">
-        <li><a href="#" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Kriteria</a></li>
-        <li><a href="#" class=" hvr-bounce-to-right"><i class="fa fa-check-square-o nav_icon"></i>Data</a></li>
+        <li><a href="?page=kota" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Data Kota</a></li>
+        <li><a href="#" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Data Trip</a></li>
     </ul>
 </li>
 <?php } ?>

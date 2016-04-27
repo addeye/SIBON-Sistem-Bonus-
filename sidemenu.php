@@ -59,6 +59,6 @@
         <a href="?page=reward" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Reward</span> </a>
     </li>
     <li>
-        <a href="?page=wish" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Info Trip</span> </a>
+        <a href="?page=wish" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Wishlist Trip</span> </a>
     </li>
 <?php } ?>

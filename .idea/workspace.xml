@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fa68a99-108d-4e31-a979-12a3edffe403" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/wish_pegawai.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/wishlist_detail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/SisbonConstant.php" afterPath="$PROJECT_DIR$/class/SisbonConstant.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/SisbonHelper.php" afterPath="$PROJECT_DIR$/class/SisbonHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Trip.php" afterPath="$PROJECT_DIR$/class/Trip.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Wish.php" afterPath="$PROJECT_DIR$/class/Wish.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Wishlist.php" afterPath="$PROJECT_DIR$/class/Wishlist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sidemenu.php" afterPath="$PROJECT_DIR$/sidemenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/wish.php" afterPath="$PROJECT_DIR$/page/wish.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/wish_act.php" afterPath="$PROJECT_DIR$/page/wish_act.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/wish_edit.php" afterPath="$PROJECT_DIR$/page/wish_edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/wishlist.php" afterPath="$PROJECT_DIR$/page/wishlist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SistemBonusPegawai.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wishlist.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wishlist.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/wishlist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30721003">
-              <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
+            <state vertical-scroll-proportion="-9.5">
+              <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
               <folding>
                 <marker date="1461715002708" expanded="true" signature="936:1185" placeholder="..." />
                 <marker date="1461715002708" expanded="true" signature="1093:1185" placeholder="..." />
@@ -113,6 +100,16 @@
                 <marker date="1461715002708" expanded="true" signature="2385:2444" placeholder="..." />
                 <marker date="1461715002708" expanded="true" signature="2745:2852" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidemenu.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sidemenu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4278997">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -227,7 +224,6 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/class/SisbonConstant.php" />
         <option value="$PROJECT_DIR$/class/SisbonHelper.php" />
-        <option value="$PROJECT_DIR$/sidemenu.php" />
         <option value="$PROJECT_DIR$/page/wish.php" />
         <option value="$PROJECT_DIR$/page/wish_edit.php" />
         <option value="$PROJECT_DIR$/class/Trip.php" />
@@ -236,6 +232,7 @@
         <option value="$PROJECT_DIR$/page/wishlist_detail.php" />
         <option value="$PROJECT_DIR$/class/Wishlist.php" />
         <option value="$PROJECT_DIR$/page/wishlist.php" />
+        <option value="$PROJECT_DIR$/sidemenu.php" />
       </list>
     </option>
   </component>
@@ -726,14 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sidemenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.807693">
-          <caret line="49" column="102" selection-start-line="49" selection-start-column="102" selection-end-line="49" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/wish_edit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.423077">
@@ -842,8 +831,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/wishlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30721003">
-          <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
+        <state vertical-scroll-proportion="-9.5">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
           <folding>
             <marker date="1461715002708" expanded="true" signature="936:1185" placeholder="..." />
             <marker date="1461715002708" expanded="true" signature="1093:1185" placeholder="..." />
@@ -863,6 +852,14 @@
             <marker date="1461715002708" expanded="true" signature="2385:2444" placeholder="..." />
             <marker date="1461715002708" expanded="true" signature="2745:2852" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sidemenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4278997">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

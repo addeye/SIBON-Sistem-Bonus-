@@ -7,6 +7,7 @@
  */
 
 $model = new Wish();
+$kota = new Kota();
 
 $id = 0;
 
@@ -41,6 +42,20 @@ $row = $model->getById($id);
 <h3>Form Wish</h3>
 <div class="grid-form">
     <form class="form-horizontal" method="post">
+        <input type="hidden" name="id_customer" value="<?=$user->pengguna_id()?>">
+        <?php if(!isset($_GET['id'])){ ?>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Kota</label>
+                <div class="col-md-5">
+                    <select name="id_kota" class="form-control">
+                        <option value=""></option>
+                        <?php foreach($kota->getAll() as $city) {?>
+                            <option value="<?=$city['id_kota']?>"><?=$city['nama_kota']?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+            </div>
+        <?php }?>
         <div class="form-group">
             <label class="col-sm-2 control-label">Ket Wish Trip</label>
             <div class="col-md-5">

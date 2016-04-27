@@ -8,7 +8,7 @@
 
 $model = new Wish();
 $kota = new Kota();
-
+$customer = new Customer();
 ?>
 
 <h3 class="head-top">Data Wish</h3>
@@ -16,6 +16,7 @@ $kota = new Kota();
 <table class="table table-bordered table-responsive">
     <tr>
         <th>No</th>
+        <th>Customer</th>
         <th>Kota</th>
         <th>Ket</th>
         <th>Rombongan</th>
@@ -24,18 +25,17 @@ $kota = new Kota();
     </tr>
 <?php
 $no=1;
-foreach($model->getDataByIdCustomer($user->pengguna_id()) as $row){
+foreach($model->getAll() as $row){
 ?>
     <tr>
         <td><?=$no++?></td>
+        <td><?=$customer->getById($row['id_customer'])['nama']?></td>
         <td><?=$kota->getById($row['id_kota'])['nama_kota']?></td>
         <td><?=$row['ket']?></td>
         <td><?=$row['jml']?></td>
         <td><span class="label <?=getStatusWish($row['status'])['class']?>"><?=getStatusWish($row['status'])['status']?></span></td>
         <td>
-            <a href="?page=wishlist&idwish=<?=$row['id_wish']?>" class="btn btn-info">Wishlist</a>
-            <a href="?page=wish_edit&id=<?=$row['id_wish']?>" class="btn btn-primary">Edit</a>
-            <button type="button" id="<?=$row['id_wish']?>" class="btn btn-danger btn-del">Delete</button>
+            <a href="?page=wishlist_detail&idwish=<?=$row['id_wish']?>" class="btn btn-info">Detail</a>
         </td>
     </tr>
 <?php } ?>

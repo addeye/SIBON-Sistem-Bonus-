@@ -33,8 +33,6 @@ ob_start();
 				return false;
 			}
 
-			
-
 			$('#toggle').click(function () {
 				screenfull.toggle($('#container')[0]);
 			});

@@ -55,8 +55,10 @@ class Wish implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("INSERT INTO tbwish (id_wish,ket,jml) VALUES (NULL,:ket,:jml)");
+            $stmt = $this->conn->prepare("INSERT INTO tbwish (id_wish,id_kota,id_customer,ket,jml) VALUES (NULL,:idkota,:idcustomer,:ket,:jml)");
             $stmt->execute(array(
+                ':idkota' => $data['id_kota'],
+                ':idcustomer' => $data['id_customer'],
                 ':ket'=>$data['ket'],
                 ':jml' => $data['jml']
             ));
@@ -93,6 +95,39 @@ class Wish implements BaseData
         {
             $stmt = $this->conn->prepare("DELETE FROM tbwish WHERE id_wish=$id");
             $stmt->execute();
+
+            return true;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
+
+    public function getDataByIdCustomer($id)
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbwish WHERE id_customer=$id");
+            $stmt->execute();
+            $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            return $row;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
+
+    public function updateStatus($id,$val)
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("UPDATE tbwish SET status=:status WHERE id_wish=$id");
+            $stmt->execute(array(
+                ':status'=>$val,
+            ));
 
             return true;
         }

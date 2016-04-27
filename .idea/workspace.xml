@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fa68a99-108d-4e31-a979-12a3edffe403" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class/Wish.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.sortable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.sortable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/sortable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/trip.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/trip_act.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/trip_edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/wish.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/wish_act.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/wish_edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/wishlist.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/wish_pegawai.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/wishlist_detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/SisbonConstant.php" afterPath="$PROJECT_DIR$/class/SisbonConstant.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/SisbonHelper.php" afterPath="$PROJECT_DIR$/class/SisbonHelper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Trip.php" afterPath="$PROJECT_DIR$/class/Trip.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Wish.php" afterPath="$PROJECT_DIR$/class/Wish.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Wishlist.php" afterPath="$PROJECT_DIR$/class/Wishlist.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sidemenu.php" afterPath="$PROJECT_DIR$/sidemenu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/wish.php" afterPath="$PROJECT_DIR$/page/wish.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/wish_act.php" afterPath="$PROJECT_DIR$/page/wish_act.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/wish_edit.php" afterPath="$PROJECT_DIR$/page/wish_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/wishlist.php" afterPath="$PROJECT_DIR$/page/wishlist.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SistemBonusPegawai.iws" />
@@ -42,22 +40,31 @@
       <file leaf-file-name="wish.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/wish.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.923077">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wishlist.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page/wishlist.php">
+      <file leaf-file-name="wishlist_detail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/wishlist_detail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7335423">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state vertical-scroll-proportion="-15.192307">
+              <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <marker date="1461714766622" expanded="true" signature="1625:1684" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wish_pegawai.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/wish_pegawai.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.923077">
+              <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,81 +72,65 @@
       <file leaf-file-name="Trip.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/Trip.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.076923">
-              <caret line="103" column="29" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+            <state vertical-scroll-proportion="-13.769231">
+              <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
               <folding>
-                <marker date="1461518234196" expanded="true" signature="423:502" placeholder="SELECT t.*,k..tbtrip..." />
-                <marker date="1461518234196" expanded="true" signature="822:918" placeholder="SELECT t.*,k..tbtrip..." />
-                <marker date="1461518234196" expanded="true" signature="1249:1331" placeholder="INSERT INTO ..." />
-                <marker date="1461518234196" expanded="true" signature="1683:1755" placeholder="UPDATE tbtri..." />
-                <marker date="1461518234196" expanded="true" signature="2093:2126" placeholder="DELETE FROM ..." />
-                <marker date="1461518234196" expanded="true" signature="2399:2434" placeholder="SELECT * FRO..tbtrip..." />
-                <marker date="1461518234196" expanded="true" signature="2399:2435" placeholder="SELECT * FRO..tbtrip..." />
+                <marker date="1461710286335" expanded="true" signature="423:524" placeholder="SELECT t.*,k..tbtrip..." />
+                <marker date="1461710286335" expanded="true" signature="845:941" placeholder="SELECT t.*,k..tbtrip..." />
+                <marker date="1461710286335" expanded="true" signature="1272:1354" placeholder="INSERT INTO ..." />
+                <marker date="1461710286335" expanded="true" signature="1706:1778" placeholder="UPDATE tbtri..." />
+                <marker date="1461710286335" expanded="true" signature="2116:2149" placeholder="DELETE FROM ..." />
+                <marker date="1461710286335" expanded="true" signature="2422:2457" placeholder="SELECT * FRO..tbtrip..." />
+                <marker date="1461710286335" expanded="true" signature="2807:2977" placeholder="SELECT * FRO..tbtrip..." />
+                <marker date="1461710286335" expanded="true" signature="2867:2965" placeholder="SELECT id_tr..tbwishlist..." />
+                <marker date="1461710286335" expanded="true" signature="2867:2966" placeholder="SELECT id_tr..tbwishlist..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="wishlist.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page/wishlist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.sortable.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.sortable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.sortable.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.sortable.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sortable.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/sortable.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.773585">
-              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trip_edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/trip_edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.307693">
-              <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.30721003">
+              <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
               <folding>
-                <marker date="1461511830547" expanded="true" signature="1245:1434" placeholder="..." />
-                <marker date="1461511830547" expanded="true" signature="1343:1434" placeholder="..." />
-                <marker date="1461511830547" expanded="true" signature="1528:1777" placeholder="..." />
-                <marker date="1461511830547" expanded="true" signature="1579:1762" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="936:1185" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="1093:1185" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="1127:1185" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="1264:1577" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="1302:1577" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="1332:1355" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="1422:1577" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="1540:1577" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="1846:2027" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="1880:1932" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="1977:2027" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="2091:2444" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="2132:2444" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="2165:2179" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="2255:2444" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="2385:2444" placeholder="..." />
+                <marker date="1461715002708" expanded="true" signature="2745:2852" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wish.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/Wish.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.076923">
+              <caret line="128" column="31" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
+              <folding>
+                <marker date="1461713738586" expanded="true" signature="423:443" placeholder="SELECT * FRO..tbwish..." />
+                <marker date="1461713738586" expanded="true" signature="763:798" placeholder="SELECT * FRO..tbwish..." />
+                <marker date="1461713738586" expanded="true" signature="1129:1229" placeholder="INSERT INTO ..." />
+                <marker date="1461713738586" expanded="true" signature="1710:1760" placeholder="UPDATE tbwis..." />
+                <marker date="1461713738586" expanded="true" signature="2124:2157" placeholder="DELETE FROM ..." />
+                <marker date="1461713738586" expanded="true" signature="2438:2477" placeholder="SELECT * FRO..tbwish..." />
+                <marker date="1461713738586" expanded="true" signature="2438:2478" placeholder="SELECT * FRO..tbwish..." />
+                <marker date="1461713738586" expanded="true" signature="2810:2857" placeholder="UPDATE tbwis..." />
               </folding>
             </state>
           </provider>
@@ -148,9 +139,32 @@
       <file leaf-file-name="wish_edit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/wish_edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="46" column="94" selection-start-line="46" selection-start-column="94" selection-end-line="46" selection-end-column="94" />
+            <state vertical-scroll-proportion="-14.423077">
+              <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wishlist.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/Wishlist.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.076923">
+              <caret line="121" column="33" selection-start-line="121" selection-start-column="33" selection-end-line="121" selection-end-column="33" />
+              <folding>
+                <marker date="1461714971121" expanded="true" signature="427:451" placeholder="SELECT * FRO..tbwishlist..." />
+                <marker date="1461714971121" expanded="true" signature="771:814" placeholder="SELECT * FRO..tbwishlist..." />
+                <marker date="1461714971121" expanded="true" signature="1145:1227" placeholder="INSERT INTO ..." />
+                <marker date="1461714971121" expanded="true" signature="1620:1676" placeholder="UPDATE tbwis..." />
+                <marker date="1461714971121" expanded="true" signature="1978:2019" placeholder="DELETE FROM ..." />
+                <marker date="1461714971121" expanded="true" signature="2295:2332" placeholder="DELETE FROM ..." />
+                <marker date="1461714971121" expanded="true" signature="2613:2659" placeholder="SELECT * FRO..tbwishlist..." />
+                <marker date="1461714971121" expanded="true" signature="2613:2661" placeholder="SELECT * FRO..tbwishlist..." />
+                <marker date="1461714971121" expanded="true" signature="3047:3086" placeholder="SELECT * FRO..tbwishlist..." />
+                <marker date="1461714971121" expanded="true" signature="3047:3093" placeholder="SELECT * FRO..tbwishlist..." />
+                <marker date="1461714971121" expanded="true" signature="3047:3106" placeholder="SELECT * FRO..tbwishlist..." />
+                <marker date="1461714971121" expanded="true" signature="3047:3113" placeholder="SELECT * FRO..tbwishlist..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,10 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/class/SisbonConstant.php" />
-        <option value="$PROJECT_DIR$/class/SessionTrait.php" />
-        <option value="$PROJECT_DIR$/class/User.php" />
-        <option value="$PROJECT_DIR$/page/customer.php" />
         <option value="$PROJECT_DIR$/page/customer_edit.php" />
         <option value="$PROJECT_DIR$/page/customer_act.php" />
         <option value="$PROJECT_DIR$/class/Pegawai.php" />
@@ -188,7 +198,6 @@
         <option value="$PROJECT_DIR$/class/KualitasKerja.php" />
         <option value="$PROJECT_DIR$/class/Kedisiplinan.php" />
         <option value="$PROJECT_DIR$/class/Kejujuran.php" />
-        <option value="$PROJECT_DIR$/class/SisbonHelper.php" />
         <option value="$PROJECT_DIR$/page/kinerja_edit.php" />
         <option value="$PROJECT_DIR$/page/profile_edit.php" />
         <option value="$PROJECT_DIR$/class/Customer.php" />
@@ -211,16 +220,21 @@
         <option value="$PROJECT_DIR$/page/trip_edit.php" />
         <option value="$PROJECT_DIR$/page/trip_act.php" />
         <option value="$PROJECT_DIR$/page/trip.php" />
-        <option value="$PROJECT_DIR$/class/Wishlist.php" />
-        <option value="$PROJECT_DIR$/class/Wish.php" />
-        <option value="$PROJECT_DIR$/sidemenu.php" />
-        <option value="$PROJECT_DIR$/page/wish_edit.php" />
-        <option value="$PROJECT_DIR$/page/wish.php" />
         <option value="$PROJECT_DIR$/js/jquery.sortable.js" />
         <option value="$PROJECT_DIR$/js/jquery.sortable.min.js" />
         <option value="$PROJECT_DIR$/css/sortable.css" />
+        <option value="$PROJECT_DIR$/page/wish_act.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/class/SisbonConstant.php" />
+        <option value="$PROJECT_DIR$/class/SisbonHelper.php" />
+        <option value="$PROJECT_DIR$/sidemenu.php" />
+        <option value="$PROJECT_DIR$/page/wish.php" />
+        <option value="$PROJECT_DIR$/page/wish_edit.php" />
         <option value="$PROJECT_DIR$/class/Trip.php" />
+        <option value="$PROJECT_DIR$/page/wish_pegawai.php" />
+        <option value="$PROJECT_DIR$/class/Wish.php" />
+        <option value="$PROJECT_DIR$/page/wishlist_detail.php" />
+        <option value="$PROJECT_DIR$/class/Wishlist.php" />
         <option value="$PROJECT_DIR$/page/wishlist.php" />
       </list>
     </option>
@@ -265,7 +279,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -315,6 +328,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,7 +394,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17862372" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18155198" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -418,25 +432,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/class/KualitasKerja.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.846153">
-          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/profile_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/session.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -489,13 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/SisbonConstant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/kinerjapegawai.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.115385">
@@ -507,14 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/SisbonHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9858934">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -522,7 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -530,7 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="205" column="31" selection-start-line="197" selection-start-column="12" selection-end-line="205" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -538,37 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
-          <folding>
-            <marker date="1461263114649" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbkinerja..." />
-            <marker date="1461263114649" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbkinerja..." />
-            <marker date="1461263114649" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1461263114649" expanded="true" signature="-1:-1" placeholder="UPDATE tbkin..." />
-            <marker date="1461263114649" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1461263114649" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbkinerja..." />
-            <marker date="1461263114649" expanded="true" signature="-1:-1" placeholder="SELECT k.*,p..tbkinerja..." />
-            <marker date="1461263114649" expanded="true" signature="-1:-1" placeholder="SELECT k.*,p..tbkinerja..." />
-            <marker date="1461263114649" expanded="true" signature="-1:-1" placeholder="SELECT k.*,p..tbkinerja..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <marker date="1460198377769" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbadmin..." />
-            <marker date="1460198377769" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbpegawai..." />
-            <marker date="1460198377769" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbcustomer..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/SessionTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -576,17 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="89" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1923075">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,15 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-63.192307">
           <caret line="108" column="30" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
-          <folding>
-            <marker date="1461246582448" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbreward..." />
-            <marker date="1461246582448" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbreward..." />
-            <marker date="1461246582448" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1461246582448" expanded="true" signature="-1:-1" placeholder="UPDATE tbrew..." />
-            <marker date="1461246582448" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1461246582448" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbreward..." />
-            <marker date="1461246582448" expanded="true" signature="-1:-1" placeholder="SELECT SUM(j..tbreward..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -618,7 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846">
           <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -626,7 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.115385">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,13 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <marker date="1461506932162" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbadmin..." />
-            <marker date="1461506932162" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbadmin..." />
-            <marker date="1461506932162" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1461506932162" expanded="true" signature="-1:-1" placeholder="UPDATE tbadm..." />
-            <marker date="1461506932162" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
           <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.038462">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -664,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.3076923">
           <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.115384616">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.923077">
           <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,13 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.76923">
           <caret line="90" column="24" selection-start-line="87" selection-start-column="12" selection-end-line="90" selection-end-column="24" />
-          <folding>
-            <marker date="1461507567947" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbkota..." />
-            <marker date="1461507567947" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbkota..." />
-            <marker date="1461507567947" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1461507567947" expanded="true" signature="-1:-1" placeholder="UPDATE tbkot..." />
-            <marker date="1461507567947" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,9 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.0">
           <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,39 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Wish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-          <folding>
-            <marker date="1461514948346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwish..." />
-            <marker date="1461514948346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwish..." />
-            <marker date="1461514948346" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1461514948346" expanded="true" signature="-1:-1" placeholder="UPDATE tbwis..." />
-            <marker date="1461514948346" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Wishlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
-          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <marker date="1461514531735" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwishlist..." />
-            <marker date="1461514531735" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwishlist..." />
-            <marker date="1461514531735" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1461514531735" expanded="true" signature="-1:-1" placeholder="UPDATE tbtri..." />
-            <marker date="1461514531735" expanded="true" signature="-1:-1" placeholder="UPDATE tbwis..." />
-            <marker date="1461514531735" expanded="true" signature="-1:-1" placeholder="UPDATE tbwis..." />
-            <marker date="1461514531735" expanded="true" signature="-1:-1" placeholder="UPDATE tbwis..." />
-            <marker date="1461514531735" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1461514531735" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -760,15 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sidemenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.384615">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,43 +639,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/wish_act.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/trip_edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.307693">
-          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
-          <folding>
-            <marker date="1461511830547" expanded="true" signature="1245:1434" placeholder="..." />
-            <marker date="1461511830547" expanded="true" signature="1343:1434" placeholder="..." />
-            <marker date="1461511830547" expanded="true" signature="1528:1777" placeholder="..." />
-            <marker date="1461511830547" expanded="true" signature="1579:1762" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/wish_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="46" column="94" selection-start-line="46" selection-start-column="94" selection-end-line="46" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.sortable.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -833,14 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/wish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.923077">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -849,37 +674,194 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page/wish_act.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.773585">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        <state vertical-scroll-proportion="-9.961538">
+          <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.sortable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.1923075">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <marker date="1460198377769" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbadmin..." />
+            <marker date="1460198377769" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbpegawai..." />
+            <marker date="1460198377769" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbcustomer..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.230769">
+          <caret line="66" column="89" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/SessionTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sidemenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.807693">
+          <caret line="49" column="102" selection-start-line="49" selection-start-column="102" selection-end-line="49" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/wish_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.423077">
+          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/class/Trip.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.076923">
-          <caret line="103" column="29" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+        <state vertical-scroll-proportion="-13.769231">
+          <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
           <folding>
-            <marker date="1461518234196" expanded="true" signature="423:502" placeholder="SELECT t.*,k..tbtrip..." />
-            <marker date="1461518234196" expanded="true" signature="822:918" placeholder="SELECT t.*,k..tbtrip..." />
-            <marker date="1461518234196" expanded="true" signature="1249:1331" placeholder="INSERT INTO ..." />
-            <marker date="1461518234196" expanded="true" signature="1683:1755" placeholder="UPDATE tbtri..." />
-            <marker date="1461518234196" expanded="true" signature="2093:2126" placeholder="DELETE FROM ..." />
-            <marker date="1461518234196" expanded="true" signature="2399:2434" placeholder="SELECT * FRO..tbtrip..." />
-            <marker date="1461518234196" expanded="true" signature="2399:2435" placeholder="SELECT * FRO..tbtrip..." />
+            <marker date="1461710286335" expanded="true" signature="423:524" placeholder="SELECT t.*,k..tbtrip..." />
+            <marker date="1461710286335" expanded="true" signature="845:941" placeholder="SELECT t.*,k..tbtrip..." />
+            <marker date="1461710286335" expanded="true" signature="1272:1354" placeholder="INSERT INTO ..." />
+            <marker date="1461710286335" expanded="true" signature="1706:1778" placeholder="UPDATE tbtri..." />
+            <marker date="1461710286335" expanded="true" signature="2116:2149" placeholder="DELETE FROM ..." />
+            <marker date="1461710286335" expanded="true" signature="2422:2457" placeholder="SELECT * FRO..tbtrip..." />
+            <marker date="1461710286335" expanded="true" signature="2807:2977" placeholder="SELECT * FRO..tbtrip..." />
+            <marker date="1461710286335" expanded="true" signature="2867:2965" placeholder="SELECT id_tr..tbwishlist..." />
+            <marker date="1461710286335" expanded="true" signature="2867:2966" placeholder="SELECT id_tr..tbwishlist..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/wish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/wish_pegawai.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.923077">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/SisbonConstant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26645768">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/SisbonHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44984326">
+          <caret line="68" column="45" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/wishlist_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.192307">
+          <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
+          <folding>
+            <marker date="1461714766622" expanded="true" signature="1625:1684" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/Wish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.076923">
+          <caret line="128" column="31" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
+          <folding>
+            <marker date="1461713738586" expanded="true" signature="423:443" placeholder="SELECT * FRO..tbwish..." />
+            <marker date="1461713738586" expanded="true" signature="763:798" placeholder="SELECT * FRO..tbwish..." />
+            <marker date="1461713738586" expanded="true" signature="1129:1229" placeholder="INSERT INTO ..." />
+            <marker date="1461713738586" expanded="true" signature="1710:1760" placeholder="UPDATE tbwis..." />
+            <marker date="1461713738586" expanded="true" signature="2124:2157" placeholder="DELETE FROM ..." />
+            <marker date="1461713738586" expanded="true" signature="2438:2477" placeholder="SELECT * FRO..tbwish..." />
+            <marker date="1461713738586" expanded="true" signature="2438:2478" placeholder="SELECT * FRO..tbwish..." />
+            <marker date="1461713738586" expanded="true" signature="2810:2857" placeholder="UPDATE tbwis..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/Wishlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="121" column="33" selection-start-line="121" selection-start-column="33" selection-end-line="121" selection-end-column="33" />
+          <folding>
+            <marker date="1461714971121" expanded="true" signature="427:451" placeholder="SELECT * FRO..tbwishlist..." />
+            <marker date="1461714971121" expanded="true" signature="771:814" placeholder="SELECT * FRO..tbwishlist..." />
+            <marker date="1461714971121" expanded="true" signature="1145:1227" placeholder="INSERT INTO ..." />
+            <marker date="1461714971121" expanded="true" signature="1620:1676" placeholder="UPDATE tbwis..." />
+            <marker date="1461714971121" expanded="true" signature="1978:2019" placeholder="DELETE FROM ..." />
+            <marker date="1461714971121" expanded="true" signature="2295:2332" placeholder="DELETE FROM ..." />
+            <marker date="1461714971121" expanded="true" signature="2613:2659" placeholder="SELECT * FRO..tbwishlist..." />
+            <marker date="1461714971121" expanded="true" signature="2613:2661" placeholder="SELECT * FRO..tbwishlist..." />
+            <marker date="1461714971121" expanded="true" signature="3047:3086" placeholder="SELECT * FRO..tbwishlist..." />
+            <marker date="1461714971121" expanded="true" signature="3047:3093" placeholder="SELECT * FRO..tbwishlist..." />
+            <marker date="1461714971121" expanded="true" signature="3047:3106" placeholder="SELECT * FRO..tbwishlist..." />
+            <marker date="1461714971121" expanded="true" signature="3047:3113" placeholder="SELECT * FRO..tbwishlist..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/wishlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7335423">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.30721003">
+          <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <marker date="1461715002708" expanded="true" signature="936:1185" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="1093:1185" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="1127:1185" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="1264:1577" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="1302:1577" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="1332:1355" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="1422:1577" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="1540:1577" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="1846:2027" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="1880:1932" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="1977:2027" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="2091:2444" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="2132:2444" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="2165:2179" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="2255:2444" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="2385:2444" placeholder="..." />
+            <marker date="1461715002708" expanded="true" signature="2745:2852" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2016 at 06:51 PM
+-- Generation Time: Apr 27, 2016 at 01:58 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -156,6 +156,27 @@ INSERT INTO `tbkinerja` (`id_kinerja`, `id_pegawai`, `jml_absensi`, `kejujuran`,
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbkota`
+--
+
+CREATE TABLE IF NOT EXISTS `tbkota` (
+  `id_kota` int(11) NOT NULL AUTO_INCREMENT,
+  `nama_kota` varchar(100) NOT NULL,
+  PRIMARY KEY (`id_kota`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `tbkota`
+--
+
+INSERT INTO `tbkota` (`id_kota`, `nama_kota`) VALUES
+(1, 'Bali'),
+(2, 'Jogjakarta'),
+(3, 'Lombok');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbkualitaskerja`
 --
 
@@ -277,6 +298,108 @@ INSERT INTO `tbtarget` (`id_target`, `ket`, `nilai`) VALUES
 (1, 'Memenuhi', 5),
 (2, 'Hampir Memenuhi', 2),
 (3, 'Belum Memenuhi', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbtrip`
+--
+
+CREATE TABLE IF NOT EXISTS `tbtrip` (
+  `id_trip` int(11) NOT NULL AUTO_INCREMENT,
+  `id_kota` int(11) NOT NULL,
+  `nama_wisata` varchar(100) NOT NULL,
+  PRIMARY KEY (`id_trip`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
+
+--
+-- Dumping data for table `tbtrip`
+--
+
+INSERT INTO `tbtrip` (`id_trip`, `id_kota`, `nama_wisata`) VALUES
+(1, 1, 'Pantai Kuta'),
+(2, 1, 'Pura Tanah Lot'),
+(3, 1, 'Pantai Padang Padang'),
+(4, 1, 'Danau Beratan Bedugul'),
+(5, 1, 'Garuda Wisnu Kencana'),
+(6, 1, 'Pantai Lovina'),
+(7, 1, 'Pura Besakih'),
+(8, 1, 'Pura Uluwatu'),
+(9, 1, 'Pantai Jimbaran'),
+(10, 1, 'Monkey Forest'),
+(11, 1, 'Tanjung Benoa'),
+(12, 1, 'Danau Batur Kintamani'),
+(13, 2, 'Candi Prambanan'),
+(14, 2, 'Pantai Parangtritis'),
+(15, 2, 'Jalan Malioboro'),
+(16, 2, 'Goa Jomblang'),
+(17, 2, 'Arum Jeram Citra Elo'),
+(18, 2, 'Keraton Yogyakarta'),
+(19, 2, 'Kebun Binatang Gembira Loka'),
+(20, 2, 'Gunung Merapi'),
+(21, 2, 'Candi Borobudur'),
+(22, 2, 'Istana Air Taman Sari'),
+(23, 3, 'Batu Bolong'),
+(24, 3, 'Batu Layar'),
+(25, 3, 'Pulau Gili Lombok'),
+(26, 3, 'Pantai Sekotong'),
+(27, 3, 'Taman Narmada'),
+(28, 3, 'Gili Nanggu');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbwish`
+--
+
+CREATE TABLE IF NOT EXISTS `tbwish` (
+  `id_wish` int(11) NOT NULL AUTO_INCREMENT,
+  `id_kota` int(11) NOT NULL,
+  `id_customer` int(11) NOT NULL,
+  `ket` text NOT NULL,
+  `jml` int(11) NOT NULL,
+  `status` int(11) NOT NULL,
+  PRIMARY KEY (`id_wish`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `tbwish`
+--
+
+INSERT INTO `tbwish` (`id_wish`, `id_kota`, `id_customer`, `ket`, `jml`, `status`) VALUES
+(1, 1, 1, 'Paket Wisata Bali Untuk Siswa', 40, 2),
+(2, 2, 1, 'Paket Wisata Orang Tua Wali', 20, 3),
+(3, 3, 1, 'Paket Wisata Lombok', 25, 2),
+(5, 3, 4, 'Paket Manula Lombok', 30, 0),
+(6, 1, 4, 'Bali Fun', 10, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbwishlist`
+--
+
+CREATE TABLE IF NOT EXISTS `tbwishlist` (
+  `id_wishlist` int(11) NOT NULL AUTO_INCREMENT,
+  `id_wish` int(11) NOT NULL,
+  `id_trip` int(11) NOT NULL,
+  PRIMARY KEY (`id_wishlist`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=34 ;
+
+--
+-- Dumping data for table `tbwishlist`
+--
+
+INSERT INTO `tbwishlist` (`id_wishlist`, `id_wish`, `id_trip`) VALUES
+(18, 1, 4),
+(19, 1, 5),
+(20, 1, 6),
+(21, 1, 3),
+(29, 3, 25),
+(30, 3, 24),
+(31, 2, 13),
+(32, 2, 21),
+(33, 2, 15);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

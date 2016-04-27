@@ -8,7 +8,7 @@
 
 include "../session.php";
 
-$model = new Trip();
+$model = new Wish();
 
 if(isset($_GET['delete'])){
     $result = $model->delete($_GET['id']);

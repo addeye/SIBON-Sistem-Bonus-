@@ -49,3 +49,39 @@ if(!function_exists('countDate'))
         return $telat->days;
     }
 }
+
+if(!function_exists('getStatusWish'))
+{
+    function getStatusWish($value)
+    {
+        $val = $value;
+        switch($val)
+        {
+            case SISBON_STATUS_WISH_DIBACA:
+                return [
+                    'status' => 'Dibaca',
+                    'class' => 'label-warning'
+                ];
+            break;
+            case SISBON_STATUS_WISH_MENUNGGU:
+                return [
+                    'status' => 'Menunggu',
+                    'class' => 'label-default'
+                ];
+            break;
+            case SISBON_STATUS_WISH_DISETUJUI:
+                return [
+                    'status' => 'Disetujui',
+                    'class' => 'label-success'
+                ];
+            break;
+            case SISBON_STATUS_WISH_DITOLAK:
+                return [
+                    'status' => 'Ditolak',
+                    'class' => 'label-danger'
+                ];
+            break;
+        }
+    }
+}
+

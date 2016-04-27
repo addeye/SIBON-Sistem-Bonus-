@@ -23,7 +23,7 @@ class Trip implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("SELECT t.*,k.nama_kota FROM tbtrip t INNER JOIN tbkota k ON t.id_kota=k.id_kota");
+            $stmt = $this->conn->prepare("SELECT t.*,k.nama_kota FROM tbtrip t INNER JOIN tbkota k ON t.id_kota=k.id_kota ORDER BY id_trip DESC ");
             $stmt->execute();
             $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -101,6 +101,22 @@ class Trip implements BaseData
         try
         {
             $stmt = $this->conn->prepare("SELECT * FROM tbtrip WHERE id_kota=$id");
+            $stmt->execute();
+            $row=$stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            return $row;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
+
+    public function getByIdKotaNotInWishlist($id,$idcustomer)
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbtrip WHERE id_kota =$id and id_trip NOT IN (SELECT id_trip FROM tbwishlist wl INNER JOIN tbwish w ON wl.id_wish=w.id_wish WHERE w.id_customer=$idcustomer)");
             $stmt->execute();
             $row=$stmt->fetchAll(PDO::FETCH_ASSOC);
 

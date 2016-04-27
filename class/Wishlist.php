@@ -55,10 +55,9 @@ class Wishlist implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("INSERT INTO tbwishlist (id_wishlist,id_wish,id_customer,id_trip) VALUES (NULL,:idwish,:idcustomer,:idtrip)");
+            $stmt = $this->conn->prepare("INSERT INTO tbwishlist (id_wishlist,id_wish,id_trip) VALUES (NULL,:idwish,:idtrip)");
             $stmt->execute(array(
                 ':idwish'=>$data['id_wish'],
-                ':idcustomer'=>$data['id_customer'],
                 ':idtrip' => $data['id_trip']
             ));
 
@@ -108,6 +107,46 @@ class Wishlist implements BaseData
             $stmt->execute();
 
             return true;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
+
+    public function getDataByIdWish($idwish)
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbwishlist WHERE id_wish=:idwish");
+            $stmt->execute(array(
+                ':idwish'=>$idwish,
+            ));
+            $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            return $row;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
+
+    public function CekData($data = array())
+    {
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT * FROM tbwishlist WHERE id_wish=:idwish and id_trip=:idtrip");
+            $stmt->execute(array(
+                ':idwish'=>$data['id_wish'],
+                ':idtrip'=>$data['id_trip']
+            ));
+            $jml = $stmt->rowCount();
+            if($jml==0)
+            {
+                return true;
+            }
+            return false;
         }
         catch(PDOException $e)
         {

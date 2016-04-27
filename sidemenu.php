@@ -47,7 +47,7 @@
         <a href="?page=profile" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i> <span class="nav-label">Profil</span> </a>
     </li>
     <li>
-        <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-list-alt nav_icon"></i> <span class="nav-label">Laporan</span> </a>
+        <a href="?page=wish_pegawai" class=" hvr-bounce-to-right"><i class="fa fa-list-alt nav_icon"></i> <span class="nav-label">WishCustomer</span> </a>
     </li>
 <?php } ?>
 

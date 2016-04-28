@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2016 at 01:58 AM
+-- Generation Time: Apr 28, 2016 at 03:36 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -309,6 +309,7 @@ CREATE TABLE IF NOT EXISTS `tbtrip` (
   `id_trip` int(11) NOT NULL AUTO_INCREMENT,
   `id_kota` int(11) NOT NULL,
   `nama_wisata` varchar(100) NOT NULL,
+  `harga` int(11) NOT NULL,
   PRIMARY KEY (`id_trip`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
 
@@ -316,35 +317,35 @@ CREATE TABLE IF NOT EXISTS `tbtrip` (
 -- Dumping data for table `tbtrip`
 --
 
-INSERT INTO `tbtrip` (`id_trip`, `id_kota`, `nama_wisata`) VALUES
-(1, 1, 'Pantai Kuta'),
-(2, 1, 'Pura Tanah Lot'),
-(3, 1, 'Pantai Padang Padang'),
-(4, 1, 'Danau Beratan Bedugul'),
-(5, 1, 'Garuda Wisnu Kencana'),
-(6, 1, 'Pantai Lovina'),
-(7, 1, 'Pura Besakih'),
-(8, 1, 'Pura Uluwatu'),
-(9, 1, 'Pantai Jimbaran'),
-(10, 1, 'Monkey Forest'),
-(11, 1, 'Tanjung Benoa'),
-(12, 1, 'Danau Batur Kintamani'),
-(13, 2, 'Candi Prambanan'),
-(14, 2, 'Pantai Parangtritis'),
-(15, 2, 'Jalan Malioboro'),
-(16, 2, 'Goa Jomblang'),
-(17, 2, 'Arum Jeram Citra Elo'),
-(18, 2, 'Keraton Yogyakarta'),
-(19, 2, 'Kebun Binatang Gembira Loka'),
-(20, 2, 'Gunung Merapi'),
-(21, 2, 'Candi Borobudur'),
-(22, 2, 'Istana Air Taman Sari'),
-(23, 3, 'Batu Bolong'),
-(24, 3, 'Batu Layar'),
-(25, 3, 'Pulau Gili Lombok'),
-(26, 3, 'Pantai Sekotong'),
-(27, 3, 'Taman Narmada'),
-(28, 3, 'Gili Nanggu');
+INSERT INTO `tbtrip` (`id_trip`, `id_kota`, `nama_wisata`, `harga`) VALUES
+(1, 1, 'Pantai Kuta', 0),
+(2, 1, 'Pura Tanah Lot', 0),
+(3, 1, 'Pantai Padang Padang', 0),
+(4, 1, 'Danau Beratan Bedugul', 0),
+(5, 1, 'Garuda Wisnu Kencana', 0),
+(6, 1, 'Pantai Lovina', 0),
+(7, 1, 'Pura Besakih', 0),
+(8, 1, 'Pura Uluwatu', 0),
+(9, 1, 'Pantai Jimbaran', 0),
+(10, 1, 'Monkey Forest', 0),
+(11, 1, 'Tanjung Benoa', 0),
+(12, 1, 'Danau Batur Kintamani', 0),
+(13, 2, 'Candi Prambanan', 0),
+(14, 2, 'Pantai Parangtritis', 0),
+(15, 2, 'Jalan Malioboro', 0),
+(16, 2, 'Goa Jomblang', 0),
+(17, 2, 'Arum Jeram Citra Elo', 0),
+(18, 2, 'Keraton Yogyakarta', 0),
+(19, 2, 'Kebun Binatang Gembira Loka', 0),
+(20, 2, 'Gunung Merapi', 0),
+(21, 2, 'Candi Borobudur', 0),
+(22, 2, 'Istana Air Taman Sari', 0),
+(23, 3, 'Batu Bolong', 0),
+(24, 3, 'Batu Layar', 0),
+(25, 3, 'Pulau Gili Lombok', 0),
+(26, 3, 'Pantai Sekotong', 0),
+(27, 3, 'Taman Narmada', 0),
+(28, 3, 'Gili Nanggu', 14000);
 
 -- --------------------------------------------------------
 

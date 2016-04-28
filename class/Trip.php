@@ -55,8 +55,12 @@ class Trip implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("INSERT INTO tbtrip (id_trip,id_kota,nama_wisata) VALUES (NULL,:idkota,:namawisata)");
-            $stmt->execute(array(':idkota'=>$data['id_kota'],':namawisata'=>$data['nama_wisata']));
+            $stmt = $this->conn->prepare("INSERT INTO tbtrip (id_trip,id_kota,nama_wisata,harga) VALUES (NULL,:idkota,:namawisata,:harga)");
+            $stmt->execute(array(
+                ':idkota'=>$data['id_kota'],
+                ':namawisata'=>$data['nama_wisata'],
+                ':harga'=>$data['harga']
+            ));
 
             return true;
         }
@@ -70,8 +74,12 @@ class Trip implements BaseData
     {
         try
         {
-            $stmt = $this->conn->prepare("UPDATE tbtrip SET id_kota=:idkota,nama_wisata=:namawisata WHERE id_trip=$id");
-            $stmt->execute(array(':namawisata'=>$data['nama_wisata'],':idkota'=>$data['id_kota']));
+            $stmt = $this->conn->prepare("UPDATE tbtrip SET id_kota=:idkota,nama_wisata=:namawisata,harga=:harga WHERE id_trip=$id");
+            $stmt->execute(array(
+                ':namawisata'=>$data['nama_wisata'],
+                ':idkota'=>$data['id_kota'],
+                ':harga'=>$data['harga']
+            ));
 
             return true;
         }

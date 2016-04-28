@@ -61,6 +61,12 @@ $datKota = $modelKota->getAll();
             </div>
         </div>
         <div class="form-group">
+            <label class="col-sm-2 control-label">Harga</label>
+            <div class="col-md-5">
+                <input type="text" class="form-control" name="harga" value="<?=$row['harga']?>" required>
+            </div>
+        </div>
+        <div class="form-group">
             <div class="col-sm-offset-2 col-sm-5">
                 <input type="submit" name="simpan" class="btn btn-success" value="Simpan">
                 <a href="?page=trip" class="btn btn-warning">Kembali</a>

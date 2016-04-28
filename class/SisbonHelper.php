@@ -85,3 +85,12 @@ if(!function_exists('getStatusWish'))
     }
 }
 
+if(!function_exists('getRupiah'))
+{
+    function getRupiah($val)
+    {
+        $result = number_format($val,0, ".", ".");
+        return 'Rp. '.$result;
+    }
+}
+

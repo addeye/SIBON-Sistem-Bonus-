@@ -17,6 +17,7 @@ $model = new Trip();
         <th>No</th>
         <th>Nama Kota</th>
         <th>Nama Wisata</th>
+        <th>Harga</th>
         <th>Action</th>
     </tr>
 <?php
@@ -27,6 +28,7 @@ foreach($model->getAll() as $row){
         <td><?=$no++?></td>
         <td><?=$row['nama_kota']?></td>
         <td><?=$row['nama_wisata']?></td>
+        <td><?=$row['harga']?></td>
         <td>
             <a href="?page=trip_edit&id=<?=$row['id_trip']?>" class="btn btn-primary">Edit</a>
             <button type="button" id="<?=$row['id_trip']?>" class="btn btn-danger btn-del">Delete</button>

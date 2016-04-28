@@ -55,7 +55,7 @@ $height = count($data)*50;
                 <div style="height: <?=$height?>px;" class="list-group list-group-alternate connected list-group-item">
                     <?php foreach($data as $row) { ?>
                         <div class="col-md-12 list-group-item">
-                            <?=$row['nama_wisata']?>
+                            <?=$row['nama_wisata']?> <?=getRupiah($row['harga'])?>
                             <input type="hidden" name="id_trip[]" value="<?=$row['id_trip']?>">
                         </div>
                     <?php } ?>
@@ -74,7 +74,7 @@ $height = count($data)*50;
                    <div style="height: 500px;" class="list-group list-group-alternate connected list no2 list-group-item">
                        <?php foreach($leftData as $wisata){ ?>
                            <div class="col-md-12 list-group-item">
-                               <?=$model->getById($wisata['id_trip'])['nama_wisata']?>
+                               <?=$model->getById($wisata['id_trip'])['nama_wisata']?> <?=getRupiah($model->getById($wisata['id_trip'])['harga'])?>
                                <input type="hidden" name="id_trip[]" value="<?=$wisata['id_trip']?>">
                            </div>
                        <?php } ?>

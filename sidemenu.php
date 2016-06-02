@@ -32,6 +32,7 @@
     <ul class="nav nav-second-level">
         <li><a href="?page=kota" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Data Kota</a></li>
         <li><a href="?page=trip" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Data Trip</a></li>
+        <li><a href="?page=bobot" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Data Bobot</a></li>
     </ul>
 </li>
 <?php } ?>

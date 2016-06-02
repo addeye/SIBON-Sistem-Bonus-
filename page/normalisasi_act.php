@@ -10,18 +10,15 @@ $model = new Kinerja();
 $customer = new Customer();
 $rewardModel = new Reward();
 $normalisasi = new Normalisasi();
+$bobot = new Bobot();
 
-$kriteria = array(
-    0.1,
-    0.1,
-    0.05,
-    0.05,
-    0.05,
-    0.2,
-    0.05,
-    0.05,
-    0.05,
-    0.3);
+$krt = array();
+foreach($bobot->getAll() as $b)
+{
+    $krt[] = $b['bobot']/100;
+}
+
+$kriteria = $krt;
 
 $row = $model->getAllByBulanTahun('januari','2016');
 

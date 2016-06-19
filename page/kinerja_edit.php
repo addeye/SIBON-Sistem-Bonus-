@@ -54,9 +54,9 @@ $dataPegawai = $modelPeg->getById($_GET['idpegawai']);
     <div class="form-group">
         <label class="col-sm-2 control-label">Absensi</label>
         <div class="col-md-1">
-            <input type="text" class="form-control" name="jml_absensi" value="<?=$data['jml_absensi']?>" required>
+            <input type="number" id="jml_absensi" class="form-control" name="jml_absensi" value="<?=$data['jml_absensi']?>" required>
         </div>
-        <label class="form-control-static">Kehadiran</label>
+        <label id="label-kehadiran" class="form-control-static">Kehadiran</label>
     </div>
     <div class="form-group">
         <label class="col-sm-2 control-label">Kejujuran</label>
@@ -83,8 +83,9 @@ $dataPegawai = $modelPeg->getById($_GET['idpegawai']);
     <div class="form-group">
         <label for="inputPassword3" class="col-sm-2 control-label">Cuti</label>
         <div class="col-sm-1">
-            <input type="text" name="cuti" class="form-control" value="<?=$data['cuti']?>" required>
+            <input type="number" id="cuti" name="cuti" class="form-control" value="<?=$data['cuti']?>" required>
         </div>
+        <label id="label-cuti" class="form-control-static">Batas Cuti 3x /Bulan</label>
     </div>
     <div class="form-group">
         <label for="inputEmail3" class="col-sm-2 control-label">Kedisiplinan</label>
@@ -146,3 +147,40 @@ $dataPegawai = $modelPeg->getById($_GET['idpegawai']);
     </div>
 </form>
 </div>
+<input type="hidden" name="batas_cuti" id="batas_cuti" value="3">
+<script>
+
+    $(document).ready(function(){
+        //       alert('alert');
+        var attr = $('#jml_absensi');
+        var attrc = $('#cuti');
+        var batas_cuti = $('#batas_cuti').val();
+        attr.change(function(){
+            var vals = attr.val();
+            if(vals <= 0)
+            {
+                console.log(vals);
+                $('#label-kehadiran').html('<span style="color: red">Tidak boleh nol</span>');
+            }
+            if(vals > 0)
+            {
+                $('#label-kehadiran').html('Kehadiran');
+            }
+        });
+
+        attrc.change(function(){
+            console.log('deye');
+            var val_cuti = attrc.val();
+            if(val_cuti > batas_cuti)
+            {
+                $('#label-cuti').html('<span style="color: red">Cuti melebihi batas </span>');
+            }
+
+            if(val_cuti <= batas_cuti)
+            {
+                $('#label-cuti').html('Batas Cuti 3x /Bulan');
+            }
+        });
+    });
+
+</script>

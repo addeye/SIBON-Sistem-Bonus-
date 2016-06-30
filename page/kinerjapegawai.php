@@ -23,8 +23,10 @@ $modelReward = new Reward();
     <div class="col-md-12">
         <a href="?page=kinerja_edit&idpegawai=<?=$_GET['id']?>&id=0" class="btn btn-primary"> Tambah</a>
         <a href="?page=kinerjalistpegawai" class="btn btn-warning"> Kembali</a>
+        <hr>
         <div class="table-responsive">
             <table style="font-size: 12px;" class="table table-striped">
+                <thead>
                 <tr>
                     <th>No</th>
                     <th>Lama Kerja</th>
@@ -40,6 +42,8 @@ $modelReward = new Reward();
                     <th>Bulan/Tahun</th>
                     <th>Action</th>
                 </tr>
+                </thead>
+                <tbody>
                 <?php
                 $no=1;
                 foreach($model->getAllDataByIdPegawai($_GET['id']) as $data){
@@ -63,6 +67,7 @@ $modelReward = new Reward();
                         </td>
                     </tr>
                 <?php } ?>
+                </tbody>
             </table>
         </div>
     </div>

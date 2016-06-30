@@ -61,6 +61,7 @@ $rowData = $model->getAllByBulanTahun('januari','2016');
 <?php if(isset($_POST['proses'])) { ?>
     <div class="table-responsive">
 <table class="table table-bordered">
+    <thead>
     <tr>
         <th>No</th>
         <th>Nama</th>
@@ -75,6 +76,8 @@ $rowData = $model->getAllByBulanTahun('januari','2016');
         <th>Customer</th>
         <th>Reward</th>
     </tr>
+    </thead>
+    <tbody>
     <?php
     $no=1;
     foreach($row as $data){
@@ -95,6 +98,7 @@ $rowData = $model->getAllByBulanTahun('januari','2016');
             <td><?= $reward[]= $modelReward->getDataWherePegawai($data['bulan'],$data['tahun'],$data['id_pegawai'])['total'] ?></td>
         </tr>
     <?php } ?>
+    </tbody>
 </table>
     </div>
 <?php } ?>
@@ -103,6 +107,7 @@ $rowData = $model->getAllByBulanTahun('januari','2016');
 <?php if(isset($_POST['proses'])) { ?>
     <div class="table-responsive">
     <table class="table table-bordered">
+        <thead>
         <tr>
             <th>No</th>
             <th>Nama</th>
@@ -117,6 +122,8 @@ $rowData = $model->getAllByBulanTahun('januari','2016');
             <th>Customer</th>
             <th>Reward</th>
         </tr>
+        </thead>
+        <tbody>
         <?php
         $no=1;
         foreach($row as $data){
@@ -136,6 +143,7 @@ $rowData = $model->getAllByBulanTahun('januari','2016');
                 <td><?=$breward[] = $modelReward->getDataWherePegawai($data['bulan'],$data['tahun'],$data['id_pegawai'])['total']/$normalisasi->getHeightValue($reward)?></td>
             </tr>
         <?php } ?>
+        </tbody>
     </table>
     </div>
 <?php } ?>
@@ -144,6 +152,7 @@ $rowData = $model->getAllByBulanTahun('januari','2016');
 <?php if(isset($_POST['proses'])) { ?>
     <div class="table-responsive">
     <table class="table table-bordered">
+        <thead>
         <tr>
             <th>No</th>
             <th>Nama</th>
@@ -158,6 +167,8 @@ $rowData = $model->getAllByBulanTahun('januari','2016');
             <th>Customer</th>
             <th>Reward</th>
         </tr>
+        </thead>
+        <tbody>
         <?php
         $no=1;
         $a=0;
@@ -178,6 +189,7 @@ $rowData = $model->getAllByBulanTahun('januari','2016');
                 <td><?=$sawNormalisasi[$a][] = $normalisasi->prosentase($kriteria[9],$breward[$a])?></td>
             </tr>
         <?php $a++;} ?>
+        </tbody>
     </table>
     </div>
 <?php } ?>
@@ -186,11 +198,14 @@ $rowData = $model->getAllByBulanTahun('januari','2016');
 <?php if(isset($_POST['proses'])) { ?>
     <div class="table-responsive">
         <table class="table table-bordered">
+            <thead>
             <tr>
                 <th>No</th>
                 <th>Nama</th>
                 <th>Normalisasi</th>
             </tr>
+            </thead>
+            <tbody>
             <?php
             $no=1;
             $a=0;
@@ -202,6 +217,7 @@ $rowData = $model->getAllByBulanTahun('januari','2016');
                     <td><?=array_sum($sawNormalisasi[$a])?></td>
                 </tr>
                 <?php $a++;} ?>
+            </tbody>
         </table>
     </div>
 <?php } ?>

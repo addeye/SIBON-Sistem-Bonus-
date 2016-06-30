@@ -69,7 +69,7 @@ if(isset($_POST['login'])) {
         <form method="post">
             <div class="col-md-6">
                 <div class="login-mail">
-                    <input type="text" name="email" placeholder="Email" required="">
+                    <input type="text" name="email" placeholder="Username" required="">
                     <i class="fa fa-envelope"></i>
                 </div>
                 <div class="login-mail">

@@ -13,4 +13,4 @@ $pegawai = new Pegawai();
 
 <h3>Selamat Datang <?= $user->nama_user ?> </h3>
 <hr>
-<?= $user::pengguna_id()==$idpegawai? '<div class="alert alert-success">Selamat Anda Mendapatkan Bonus dengan nilai Normalisasi '.$terbesar.'</div>' : '' ?>
+<?= $user::pengguna_id()==$idpegawai? '<div class="alert alert-success">Selamat Anda Mendapatkan Bonus Sebesar Rp. 500.000,00</div>' : '' ?>

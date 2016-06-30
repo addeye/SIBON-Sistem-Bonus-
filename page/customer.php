@@ -11,7 +11,9 @@ $model = new Customer();
 
 <h3 class="head-top">Data Customer</h3>
 <a href="?page=customer_edit" class="btn btn-primary"> Tambah</a>
+<hr>
 <table class="table table-bordered table-responsive">
+    <thead>
     <tr>
         <th>No</th>
         <th>Nama</th>
@@ -20,6 +22,8 @@ $model = new Customer();
         <th>Email</th>
         <th>Action</th>
     </tr>
+    </thead>
+    <tbody>
     <?php
     $no=1;
     foreach($model->getAllByIdPegawai($_SESSION['user_session']) as $data){
@@ -36,6 +40,7 @@ $model = new Customer();
             </td>
         </tr>
     <?php } ?>
+    </tbody>
 </table>
 
 <script>

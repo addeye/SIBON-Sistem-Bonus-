@@ -13,7 +13,9 @@ $kota = new Kota();
 
 <h3 class="head-top">Data Wish</h3>
 <a href="?page=wish_edit" class="btn btn-primary"> Tambah</a>
+<hr>
 <table class="table table-bordered table-responsive">
+    <thead>
     <tr>
         <th>No</th>
         <th>Kota</th>
@@ -22,6 +24,8 @@ $kota = new Kota();
         <th>Status</th>
         <th>Action</th>
     </tr>
+    </thead>
+    <tbody>
 <?php
 $no=1;
 foreach($model->getDataByIdCustomer($user->pengguna_id()) as $row){
@@ -39,6 +43,7 @@ foreach($model->getDataByIdCustomer($user->pengguna_id()) as $row){
         </td>
     </tr>
 <?php } ?>
+    </tbody>
 </table>
 
 

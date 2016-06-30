@@ -47,7 +47,7 @@ $row = $model->getById($id);
         <div class="form-group">
             <label class="col-sm-2 control-label">Nama</label>
             <div class="col-md-5">
-                <input type="text" class="form-control" name="nama_kota" value="<?=$row['nama_kota']?>">
+                <input type="text" class="form-control" name="nama_kota" value="<?=$row['nama_kota']?>" required>
             </div>
         </div>
         <div class="form-group">

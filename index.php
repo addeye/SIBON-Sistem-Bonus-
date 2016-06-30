@@ -36,13 +36,22 @@ ob_start();
 			$('#toggle').click(function () {
 				screenfull.toggle($('#container')[0]);
 			});
-			
 
-			
+
+
 		});
 		</script>
 
 <!----->
+	<link rel="stylesheet" type="text/css" href="dist/datatables/css/jquery.dataTables.css">
+
+	<script type="text/javascript" charset="utf8" src="dist/datatables/js/jquery.dataTables.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('table').DataTable();
+		} );
+	</script>
 </head>
 <body>
 <div id="wrapper">

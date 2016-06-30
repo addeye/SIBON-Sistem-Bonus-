@@ -46,11 +46,7 @@ if(isset($_POST['submit']))
     <div class="form-group">
         <select class="form-control" name="bulan">
             <option value="">Pilih Bulan</option>
-            <?php
-            foreach(getBulan() as $key=>$val){
-                ?>
-                <option value="<?=$key?>" <?= isset($_POST['bulan'])? $_POST['bulan']==$key? 'selected':'':'' ?> ><?=$val?></option>
-            <?php } ?>
+            <option value="<?= $customer->getById($user->pengguna_id())['bulan']; ?>"><?= $customer->getById($user->pengguna_id())['bulan']; ?></option>
         </select>
     </div>
     <div class="form-group">

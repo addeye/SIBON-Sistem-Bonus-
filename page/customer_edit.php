@@ -42,44 +42,44 @@ $data = $model->getById($id);
     <div class="form-group">
         <label class="col-sm-2 control-label">Nama</label>
         <div class="col-md-5">
-            <input type="text" class="form-control" name="nama" value="<?=$data['nama']?>">
+            <input type="text" class="form-control" name="nama" value="<?=$data['nama']?>" required>
         </div>
     </div>
     <div class="form-group">
         <label class="col-sm-2 control-label">No Telepon</label>
         <div class="col-md-5">
-            <input type="text" class="form-control" name="no_telp" value="<?=$data['no_telp']?>">
+            <input type="text" class="form-control" name="no_telp" value="<?=$data['no_telp']?>" required>
         </div>
     </div>
     <div class="form-group">
         <label class="col-sm-2 control-label">Alamat</label>
         <div class="col-md-5">
-            <textarea class="form-control" name="alamat"><?=$data['alamat']?></textarea>
+            <textarea class="form-control" name="alamat" required><?=$data['alamat']?></textarea>
         </div>
     </div>
     <div class="form-group">
         <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
         <div class="col-sm-5">
-            <input type="text" class="form-control" name="email" value="<?=$data['email']?>">
+            <input type="text" class="form-control" name="email" value="<?=$data['email']?>" required>
         </div>
     </div>
     <div class="form-group">
         <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
         <div class="col-sm-5">
-            <input type="text" name="password" class="form-control" value="<?=$data['password']?>">
+            <input type="text" name="password" class="form-control" value="<?=$data['password']?>" required>
         </div>
     </div>
     <div class="form-group">
         <label for="inputPassword3" class="col-sm-2 control-label">Bulan/Tahun</label>
         <div class="col-sm-2">
-            <select name="bulan" class="form-control">
+            <select name="bulan" class="form-control" required>
                 <?php foreach(getBulan() as $key => $val) {?>
                     <option value="<?=$key?>" <?= $key==$data['bulan'] ? 'selected' : '' ?> ><?=$val?></option>
                 <?php } ?>
             </select>
             </div>
             <div class="col-sm-2">
-            <select name="tahun" class="form-control">
+            <select name="tahun" class="form-control" required>
                 <?php foreach(getTahun() as $key => $val) {?>
                     <option value="<?=$key?>" <?= $key==$data['tahun']?'selected':'' ?> ><?=$val?></option>
                 <?php } ?>

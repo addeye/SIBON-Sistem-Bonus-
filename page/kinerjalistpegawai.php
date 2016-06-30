@@ -11,7 +11,9 @@ $model = new Pegawai();
 ?>
 
 <h3 class="head-top">Data Pegawai</h3>
+
 <table class="table table-bordered table-responsive">
+    <thead>
     <tr>
         <th>No</th>
         <th>Nama</th>
@@ -19,6 +21,8 @@ $model = new Pegawai();
         <th>Email</th>
         <th>Action</th>
     </tr>
+    </thead>
+    <tbody>
     <?php
     $no=1;
     foreach($model->getAll() as $data){
@@ -33,4 +37,5 @@ $model = new Pegawai();
             </td>
         </tr>
     <?php } ?>
+    </tbody>
 </table>

@@ -9,13 +9,17 @@ $admin = new Admin();
 ?>
 <h3 class="head-top">Data Admin</h3>
 <a href="?page=admin_edit" class="btn btn-primary"> Tambah</a>
+<hr>
 <table class="table table-bordered table-responsive">
+    <thead>
     <tr>
         <th>No</th>
         <th>Nama</th>
         <th>E-Mail</th>
         <th>Action</th>
     </tr>
+    </thead>
+    <tbody>
     <?php
     $no=1;
     foreach($admin->getAll() as $data){
@@ -30,6 +34,7 @@ $admin = new Admin();
         </td>
     </tr>
     <?php } ?>
+    </tbody>
 </table>
 
 <script>

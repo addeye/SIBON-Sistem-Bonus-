@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fa68a99-108d-4e31-a979-12a3edffe403" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class/Bobot.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/bobot.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/admin.php" afterPath="$PROJECT_DIR$/page/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/admin_edit.php" afterPath="$PROJECT_DIR$/page/admin_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/customer.php" afterPath="$PROJECT_DIR$/page/customer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/customer_all.php" afterPath="$PROJECT_DIR$/page/customer_all.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/customer_edit.php" afterPath="$PROJECT_DIR$/page/customer_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/home.php" afterPath="$PROJECT_DIR$/page/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/kinerjalistpegawai.php" afterPath="$PROJECT_DIR$/page/kinerjalistpegawai.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/kinerjapegawai.php" afterPath="$PROJECT_DIR$/page/kinerjapegawai.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/kota_edit.php" afterPath="$PROJECT_DIR$/page/kota_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/normalisasi.php" afterPath="$PROJECT_DIR$/page/normalisasi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/normalisasi_act.php" afterPath="$PROJECT_DIR$/page/normalisasi_act.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sidemenu.php" afterPath="$PROJECT_DIR$/sidemenu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/pegawai.php" afterPath="$PROJECT_DIR$/page/pegawai.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/pegawai_edit.php" afterPath="$PROJECT_DIR$/page/pegawai_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/profile_edit.php" afterPath="$PROJECT_DIR$/page/profile_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/reward.php" afterPath="$PROJECT_DIR$/page/reward.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/trip.php" afterPath="$PROJECT_DIR$/page/trip.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/wish.php" afterPath="$PROJECT_DIR$/page/wish.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/wish_pegawai.php" afterPath="$PROJECT_DIR$/page/wish_pegawai.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SistemBonusPegawai.iws" />
@@ -29,113 +43,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="kota.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/kota.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769">
-              <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bobot.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/bobot.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847">
-              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-              <folding>
-                <marker date="1464851466472" expanded="true" signature="454:537" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="normalisasi.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/normalisasi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="20" selection-end-column="17" />
+            <state vertical-scroll-proportion="-72.15385">
+              <caret line="219" column="20" selection-start-line="219" selection-start-column="20" selection-end-line="219" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="normalisasi_act.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page/normalisasi_act.php">
+      <file leaf-file-name="pegawai.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/pegawai.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13322884">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.0384617">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="typography.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/typography.html">
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.927273">
-              <caret line="402" column="13" selection-start-line="400" selection-start-column="7" selection-end-line="402" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customer_edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/customer_edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.9230769">
+            <state vertical-scroll-proportion="0.6923077">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kota_edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/kota_edit.php">
+      <file leaf-file-name="trip.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/trip.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state vertical-scroll-proportion="-1.5769231">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bobot.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class/Bobot.php">
+      <file leaf-file-name="customer_all.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/customer_all.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9615386">
-              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-              <folding>
-                <marker date="1464851597334" expanded="true" signature="424:461" placeholder="SELECT * FRO..tbbobot..." />
-                <marker date="1464851597334" expanded="true" signature="1179:1220" placeholder="UPDATE tbbob..." />
-              </folding>
+            <state vertical-scroll-proportion="-22.346153">
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Kota.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class/Kota.php">
+      <file leaf-file-name="wish.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/wish.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.576923">
-              <caret line="80" column="9" selection-start-line="70" selection-start-column="8" selection-end-line="80" selection-end-column="9" />
-              <folding>
-                <marker date="1461507567947" expanded="true" signature="423:443" placeholder="SELECT * FRO..tbkota..." />
-                <marker date="1461507567947" expanded="true" signature="763:798" placeholder="SELECT * FRO..tbkota..." />
-                <marker date="1461507567947" expanded="true" signature="1129:1191" placeholder="INSERT INTO ..." />
-                <marker date="1461507567947" expanded="true" signature="1511:1563" placeholder="UPDATE tbkot..." />
-                <marker date="1461507567947" expanded="true" signature="1869:1902" placeholder="DELETE FROM ..." />
-              </folding>
+            <state vertical-scroll-proportion="-6.6538463">
+              <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wish_pegawai.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/wish_pegawai.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.26923">
+              <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wishlist.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/wishlist.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="30.384615">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kota.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/kota.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.153846">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.515674">
+              <caret line="47" column="94" selection-start-line="47" selection-start-column="94" selection-end-line="47" selection-end-column="94" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,57 +159,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/class/Pegawai.php" />
-        <option value="$PROJECT_DIR$/page/profile.php" />
-        <option value="$PROJECT_DIR$/class/Penilaian.php" />
-        <option value="$PROJECT_DIR$/class/Koneksi.php" />
-        <option value="$PROJECT_DIR$/page/admin.php" />
-        <option value="$PROJECT_DIR$/page/kinerja_act.php" />
-        <option value="$PROJECT_DIR$/class/Sikap.php" />
         <option value="$PROJECT_DIR$/class/Target.php" />
         <option value="$PROJECT_DIR$/class/KualitasKerja.php" />
         <option value="$PROJECT_DIR$/class/Kedisiplinan.php" />
         <option value="$PROJECT_DIR$/class/Kejujuran.php" />
-        <option value="$PROJECT_DIR$/page/kinerja_edit.php" />
-        <option value="$PROJECT_DIR$/page/profile_edit.php" />
-        <option value="$PROJECT_DIR$/class/Customer.php" />
-        <option value="$PROJECT_DIR$/page/reward.php" />
-        <option value="$PROJECT_DIR$/page/kinerjapegawai.php" />
         <option value="$PROJECT_DIR$/class/Reward.php" />
-        <option value="$PROJECT_DIR$/page/kinerjalistpegawai.php" />
-        <option value="$PROJECT_DIR$/page/customer_all.php" />
         <option value="$PROJECT_DIR$/class/Normalisasi.php" />
         <option value="$PROJECT_DIR$/class/Kinerja.php" />
-        <option value="$PROJECT_DIR$/page/home.php" />
         <option value="$PROJECT_DIR$/class/Admin.php" />
         <option value="$PROJECT_DIR$/class/Kota.php" />
         <option value="$PROJECT_DIR$/page/Kota.php" />
-        <option value="$PROJECT_DIR$/page/kota_edit.php" />
-        <option value="$PROJECT_DIR$/page/kota.php" />
         <option value="$PROJECT_DIR$/page/kota_act.php" />
         <option value="$PROJECT_DIR$/page/trip_act.php" />
         <option value="$PROJECT_DIR$/js/jquery.sortable.js" />
         <option value="$PROJECT_DIR$/js/jquery.sortable.min.js" />
         <option value="$PROJECT_DIR$/css/sortable.css" />
         <option value="$PROJECT_DIR$/page/wish_act.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/class/SisbonConstant.php" />
-        <option value="$PROJECT_DIR$/page/wish.php" />
         <option value="$PROJECT_DIR$/page/wish_edit.php" />
-        <option value="$PROJECT_DIR$/page/wish_pegawai.php" />
         <option value="$PROJECT_DIR$/class/Wish.php" />
         <option value="$PROJECT_DIR$/page/wishlist_detail.php" />
         <option value="$PROJECT_DIR$/class/Wishlist.php" />
         <option value="$PROJECT_DIR$/class/Trip.php" />
         <option value="$PROJECT_DIR$/page/trip_edit.php" />
-        <option value="$PROJECT_DIR$/page/trip.php" />
         <option value="$PROJECT_DIR$/class/SisbonHelper.php" />
         <option value="$PROJECT_DIR$/page/wishlist.php" />
         <option value="$PROJECT_DIR$/sidemenu.php" />
         <option value="$PROJECT_DIR$/page/bobot.php" />
         <option value="$PROJECT_DIR$/class/Bobot.php" />
-        <option value="$PROJECT_DIR$/page/normalisasi.php" />
         <option value="$PROJECT_DIR$/page/normalisasi_act.php" />
+        <option value="$PROJECT_DIR$/page/kinerja_edit.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/page/admin_edit.php" />
+        <option value="$PROJECT_DIR$/page/home.php" />
+        <option value="$PROJECT_DIR$/class/Customer.php" />
+        <option value="$PROJECT_DIR$/page/reward.php" />
+        <option value="$PROJECT_DIR$/page/customer_edit.php" />
+        <option value="$PROJECT_DIR$/page/kota_edit.php" />
+        <option value="$PROJECT_DIR$/page/pegawai_edit.php" />
+        <option value="$PROJECT_DIR$/page/profile_edit.php" />
+        <option value="$PROJECT_DIR$/page/admin.php" />
+        <option value="$PROJECT_DIR$/page/customer.php" />
+        <option value="$PROJECT_DIR$/page/kinerjalistpegawai.php" />
+        <option value="$PROJECT_DIR$/page/kinerjapegawai.php" />
+        <option value="$PROJECT_DIR$/page/kota.php" />
+        <option value="$PROJECT_DIR$/page/normalisasi.php" />
+        <option value="$PROJECT_DIR$/page/pegawai.php" />
+        <option value="$PROJECT_DIR$/page/wish.php" />
+        <option value="$PROJECT_DIR$/page/wish_pegawai.php" />
+        <option value="$PROJECT_DIR$/page/trip.php" />
+        <option value="$PROJECT_DIR$/page/customer_all.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -283,20 +286,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SistemBonusPegawai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SistemBonusPegawai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="class" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -361,11 +350,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18155198" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22913617" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -403,62 +392,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/page/customer_all.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/reward.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.153846">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/kinerjapegawai.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Normalisasi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/admin_act.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Kinerja.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Reward.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-63.192307">
-          <caret line="108" column="30" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/BaseData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/Koneksi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.115385">
@@ -470,27 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/admin_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.038462">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/pegawai_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3076923">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/pegawai.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.115384616">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -557,41 +469,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.230769">
-          <caret line="66" column="89" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/SessionTrait.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/wish_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/wish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/wish_pegawai.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,28 +483,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/wishlist_detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/Wish.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="128" column="31" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
-          <folding>
-            <marker date="1461713738586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwish..." />
-            <marker date="1461713738586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwish..." />
-            <marker date="1461713738586" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1461713738586" expanded="true" signature="-1:-1" placeholder="UPDATE tbwis..." />
-            <marker date="1461713738586" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1461713738586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwish..." />
-            <marker date="1461713738586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwish..." />
-            <marker date="1461713738586" expanded="true" signature="-1:-1" placeholder="UPDATE tbwis..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -631,34 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="122" column="61" selection-start-line="122" selection-start-column="61" selection-end-line="122" selection-end-column="61" />
-          <folding>
-            <marker date="1461806616138" expanded="true" signature="-1:-1" placeholder="SELECT t.*,k..tbtrip..." />
-            <marker date="1461806616138" expanded="true" signature="-1:-1" placeholder="SELECT t.*,k..tbtrip..." />
-            <marker date="1461806616138" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1461806616138" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1461806616138" expanded="true" signature="-1:-1" placeholder="UPDATE tbtri..." />
-            <marker date="1461806616138" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1461806616138" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbtrip..." />
-            <marker date="1461806616138" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbtrip..." />
-            <marker date="1461806616138" expanded="true" signature="-1:-1" placeholder="SELECT id_tr..tbwishlist..." />
-            <marker date="1461806616138" expanded="true" signature="-1:-1" placeholder="SELECT id_tr..tbwishlist..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/trip_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/trip.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,44 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="130" column="34" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
-          <folding>
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwishlist..." />
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwishlist..." />
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="UPDATE tbwis..." />
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwishlist..." />
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwishlist..." />
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwishlist..." />
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwishlist..." />
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwishlist..." />
-            <marker date="1461714971121" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbwishlist..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/wishlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6153846">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.615383">
-          <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,23 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.961538">
           <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6538463">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/kota.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,51 +523,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/kota_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/class/Kota.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.576923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="80" column="9" selection-start-line="70" selection-start-column="8" selection-end-line="80" selection-end-column="9" />
           <folding>
-            <marker date="1461507567947" expanded="true" signature="423:443" placeholder="SELECT * FRO..tbkota..." />
-            <marker date="1461507567947" expanded="true" signature="763:798" placeholder="SELECT * FRO..tbkota..." />
-            <marker date="1461507567947" expanded="true" signature="1129:1191" placeholder="INSERT INTO ..." />
-            <marker date="1461507567947" expanded="true" signature="1511:1563" placeholder="UPDATE tbkot..." />
-            <marker date="1461507567947" expanded="true" signature="1869:1902" placeholder="DELETE FROM ..." />
+            <marker date="1461507567947" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbkota..." />
+            <marker date="1461507567947" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbkota..." />
+            <marker date="1461507567947" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1461507567947" expanded="true" signature="-1:-1" placeholder="UPDATE tbkot..." />
+            <marker date="1461507567947" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/customer_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.9230769">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/typography.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.927273">
+        <state vertical-scroll-proportion="0.0">
           <caret line="402" column="13" selection-start-line="400" selection-start-column="7" selection-end-line="402" selection-end-column="13" />
           <folding />
         </state>
@@ -795,37 +550,259 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/class/Bobot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9615386">
+        <state vertical-scroll-proportion="0.0">
           <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
-            <marker date="1464851597334" expanded="true" signature="424:461" placeholder="SELECT * FRO..tbbobot..." />
-            <marker date="1464851597334" expanded="true" signature="1179:1220" placeholder="UPDATE tbbob..." />
+            <marker date="1464851597334" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbbobot..." />
+            <marker date="1464851597334" expanded="true" signature="-1:-1" placeholder="UPDATE tbbob..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/bobot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847">
+        <state vertical-scroll-proportion="0.0">
           <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
           <folding>
-            <marker date="1464851466472" expanded="true" signature="454:537" placeholder="..." />
+            <marker date="1464851466472" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/normalisasi_act.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="79" column="51" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/admin_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.461538">
+          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="15" column="125" selection-start-line="15" selection-start-column="125" selection-end-line="15" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/Customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <folding>
+            <marker date="1467296872243" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbcustomer..." />
+            <marker date="1467296872243" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbcustomer..." />
+            <marker date="1467296872243" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1467296872243" expanded="true" signature="-1:-1" placeholder="UPDATE tbcus..." />
+            <marker date="1467296872243" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1467296872243" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbcustomer..." />
+            <marker date="1467296872243" expanded="true" signature="-1:-1" placeholder="SELECT c.*,p..tbcustomer..." />
+            <marker date="1467296872243" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbcustomer..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/reward.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.961538">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/customer_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.653846">
+          <caret line="81" column="62" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/kinerja_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-42.807693">
+          <caret line="168" column="11" selection-start-line="168" selection-start-column="11" selection-end-line="168" selection-end-column="11" />
+          <folding>
+            <marker date="1466348403747" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1466348403747" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/kota_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.692307">
+          <caret line="49" column="112" selection-start-line="49" selection-start-column="112" selection-end-line="49" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/pegawai_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.076923">
+          <caret line="80" column="107" selection-start-line="80" selection-start-column="107" selection-end-line="80" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/profile_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.192308">
+          <caret line="80" column="107" selection-start-line="80" selection-start-column="107" selection-end-line="80" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/trip_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.5">
+          <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/wish_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3076923">
+          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/wishlist_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6153846">
+          <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.692308">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/kinerjalistpegawai.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/kinerjapegawai.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/normalisasi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="20" selection-end-column="17" />
+        <state vertical-scroll-proportion="-72.15385">
+          <caret line="219" column="20" selection-start-line="219" selection-start-column="20" selection-end-line="219" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/normalisasi_act.php">
+    <entry file="file://$PROJECT_DIR$/page/pegawai.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13322884">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="-6.0384617">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6923077">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/wish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6538463">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/wish_pegawai.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.26923">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/wishlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="30.384615">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/trip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5769231">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/customer_all.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.346153">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/kota.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.515674">
+          <caret line="47" column="94" selection-start-line="47" selection-start-column="94" selection-end-line="47" selection-end-column="94" />
           <folding />
         </state>
       </provider>

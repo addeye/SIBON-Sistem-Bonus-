@@ -12,6 +12,7 @@ $modelPeg = new Pegawai();
 
 <h3 class="head-top">Data Customer</h3>
 <table class="table table-bordered table-responsive">
+    <thead>
     <tr>
         <th>No</th>
         <th>Nama</th>
@@ -22,6 +23,8 @@ $modelPeg = new Pegawai();
         <th>Tahun</th>
         <th>Pegawai</th>
     </tr>
+    </thead>
+    <tbody>
     <?php
     $no=1;
     foreach($model->getAll() as $data){
@@ -38,4 +41,5 @@ $modelPeg = new Pegawai();
             <td><?=$dataPeg['nama']?></td>
         </tr>
     <?php } ?>
+    </tbody>
 </table>

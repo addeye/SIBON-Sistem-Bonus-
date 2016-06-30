@@ -13,7 +13,9 @@ $customer = new Customer();
 
 <h3 class="head-top">Data Wish</h3>
 <a href="?page=wish_edit" class="btn btn-primary"> Tambah</a>
+<hr>
 <table class="table table-bordered table-responsive">
+    <thead>
     <tr>
         <th>No</th>
         <th>Customer</th>
@@ -23,6 +25,8 @@ $customer = new Customer();
         <th>Status</th>
         <th>Action</th>
     </tr>
+    </thead>
+    <tbody>
 <?php
 $no=1;
 foreach($model->getAll() as $row){
@@ -39,6 +43,7 @@ foreach($model->getAll() as $row){
         </td>
     </tr>
 <?php } ?>
+    </tbody>
 </table>
 
 

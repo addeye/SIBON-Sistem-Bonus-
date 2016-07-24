@@ -142,13 +142,21 @@ class Kinerja implements BaseData
         }
     }
 
-    public function getAllDataKinerja($bulan,$tahun)
+    public function getByIdpegawaiBulanTahun($bulan,$tahun,$idpegawai)
     {
-        $stmt = $this->conn->prepare("SELECT k.*,p.nama,p.tgl_masuk FROM tbkinerja k INNER JOIN tbpegawai p ON k.id_pegawai=p.id_pegawai WHERE k.bulan='$bulan' and k.tahun='$tahun'");
-        $stmt->execute();
-        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        try
+        {
+            $stmt = $this->conn->prepare("SELECT k.*,p.nama,p.tgl_masuk FROM tbkinerja k INNER JOIN tbpegawai p ON k.id_pegawai=p.id_pegawai WHERE k.id_pegawai='$idpegawai' and k.bulan='$bulan' and k.tahun='$tahun'");
+            $stmt->execute();
 
-        return $row;
+            $rowKinerja = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            return $rowKinerja;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
     }
 
     public function transformasiData($data = array())
